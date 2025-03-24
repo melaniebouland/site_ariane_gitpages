@@ -1,5 +1,7 @@
 import requests
 from ics import Calendar
+import json
+
 
 # URL du flux iCal public (remplace par l'URL exacte de ton calendrier)
 ICAL_URL = "https://calendar.google.com/calendar/ical/consortium.ariane%40gmail.com/public/basic.ics"
@@ -8,7 +10,7 @@ ICAL_URL = "https://calendar.google.com/calendar/ical/consortium.ariane%40gmail.
 response = requests.get(ICAL_URL)
 if response.status_code == 200:
     cal = Calendar(response.text)
-    
+
     # Dictionnaire pour stocker les événements selon leur préfixe
     events_by_category = {}
 
@@ -23,12 +25,12 @@ if response.status_code == 200:
         # Ajouter l'événement à la bonne catégorie
         if category not in events_by_category:
             events_by_category[category] = []
-        events_by_category[category].append({"title": title, "start": start})
+        events_by_category[category].append({"title": title, "start": start.isoformat()})
 
-    # Afficher le tri des événements
-    for category, events in events_by_category.items():
-        print(f"\n📌 Catégorie : {category}")
-        for e in events:
-            print(f"  - {e['title']} ({e['start']})")
+    with open("calendrier.json", "w", encoding="utf-8") as json_file:
+        json.dump(events_by_category, json_file, ensure_ascii= False, indent=4)
+    
+    print("Les événements ont été enregistrés dans le fichier calendrier.json.")
 else:
     print("❌ Impossible de récupérer le calendrier")
+

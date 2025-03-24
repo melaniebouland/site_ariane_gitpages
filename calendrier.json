@@ -1,0 +1,534 @@
+{
+    "[JOURNEE": [
+        {
+            "title": "[JOURNEE D'ETUDES GT] \"OPEN FRENCH CORPUS\" ARIANE/CORLI",
+            "start": "2024-11-28T00:00:00+00:00"
+        },
+        {
+            "title": "[JOURNEE D'ETUDES GT] \"OPEN FRENCH CORPUS\" ARIANE/CORLI",
+            "start": "2024-10-16T00:00:00+00:00"
+        },
+        {
+            "title": "[JOURNEE D'ETUDES] AXE 1 - GT3 : Outils et pratiques éditoriales",
+            "start": "2023-11-28T00:00:00+00:00"
+        }
+    ],
+    "Webinaire": [
+        {
+            "title": "Webinaire interconsortiums-HN",
+            "start": "2023-11-29T14:00:00+00:00"
+        }
+    ],
+    "[FORMATION]": [
+        {
+            "title": "[FORMATION] AXE 1 - GT3 : \"Edition structurée de corpus textuels\"",
+            "start": "2024-06-24T00:00:00+00:00"
+        },
+        {
+            "title": "[FORMATION] AXE 1 - GT3 : TEI 1 - Niveau 1",
+            "start": "2024-10-24T00:00:00+00:00"
+        },
+        {
+            "title": "[FORMATION] AXE 1 - GT2 : Formation à Transkribus",
+            "start": "2023-04-26T00:00:00+00:00"
+        },
+        {
+            "title": "[FORMATION] AXE 1 - GT3 : TEI 1 - Niveau 1",
+            "start": "2023-10-19T00:00:00+00:00"
+        },
+        {
+            "title": "[FORMATION] AXE 1 - GT3 : TEI 2 - Niveau avancé",
+            "start": "2024-05-23T00:00:00+00:00"
+        },
+        {
+            "title": "[FORMATION] AXE 1 - GT3 : \"Ecole thématique « Analyser et Publier des corpus encodés en XML\" (ÉThAP 2024)",
+            "start": "2024-06-19T00:00:00+00:00"
+        },
+        {
+            "title": "[FORMATION] AXE 1 - GT3 : \"Edition structurée de corpus textuels, du 24 au 27 juin à Strasbourg\"\"",
+            "start": "2025-06-25T00:00:00+00:00"
+        }
+    ],
+    "[REUNION": [
+        {
+            "title": "[REUNION DE TRAVAIL DES GT] AXE 1 - GT3 : Colloque \"Lexicographie : nouveaux défis\"",
+            "start": "2023-07-06T11:30:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL DES GTP] \"Web Sémantique\" ARIANE/MASAplus",
+            "start": "2023-04-05T07:00:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL DES CONSORTIUMS]",
+            "start": "2026-01-29T00:00:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL DES GT] AXE 1 - GT3 : Colloque \"Lexicographie : nouveaux défis\"",
+            "start": "2023-07-05T15:30:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL DES GTP] \"OPEN FRENCH CORPUS\" ARIANE/CORLI",
+            "start": "2024-03-06T15:00:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL DES CONSORTIUMS]",
+            "start": "2024-01-29T00:00:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL DES GTP] \"OPEN FRENCH CORPUS\" ARIANE/CORLI",
+            "start": "2024-05-31T08:00:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL COORD.]",
+            "start": "2024-05-03T19:00:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL DES CONSORTIUMS]",
+            "start": "2025-06-03T00:00:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL COORD.]",
+            "start": "2024-05-02T12:00:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL COORD.]",
+            "start": "2024-01-24T12:00:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL DES GT] \"OPEN FRENCH CORPUS\" ARIANE/CORLI",
+            "start": "2023-02-03T09:00:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL DES GTP] \"Web Sémantique\" ARIANE/MASAplus",
+            "start": "2023-06-05T07:00:00+00:00"
+        },
+        {
+            "title": "[REUNION COSP]",
+            "start": "2024-07-10T08:30:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL AXE 1 – GT3] – Atelier «Éditions numériques de textes antiques»",
+            "start": "2024-12-10T13:00:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL DES GT] AXE 1 - GT3 : Colloque \"Lexicographie : nouveaux défis\"",
+            "start": "2023-07-05T11:00:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL COORD.]",
+            "start": "2024-04-11T09:00:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL COSP]",
+            "start": "2024-02-09T12:30:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL COORD.]",
+            "start": "2023-09-14T09:00:00+00:00"
+        },
+        {
+            "title": "[REUNION COSP]",
+            "start": "2024-09-25T14:30:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL COSP]",
+            "start": "2023-12-19T11:30:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL COORD.]",
+            "start": "2024-04-18T08:30:00+00:00"
+        },
+        {
+            "title": "[REUNION COSP]",
+            "start": "2024-10-22T12:00:00+02:00"
+        },
+        {
+            "title": "[REUNION COSP]",
+            "start": "2024-10-01T12:00:00+02:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL COORD.]",
+            "start": "2024-05-21T12:30:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL COORD.] AAP OSCARS",
+            "start": "2024-05-09T07:30:00+00:00"
+        },
+        {
+            "title": "[REUNION COSP]",
+            "start": "2024-06-26T11:00:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL DES CONSORTIUMS]",
+            "start": "2024-10-10T00:00:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL DES GTP] \"Web Sémantique\" ARIANE/MASAplus",
+            "start": "2023-05-05T07:00:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL DES CONSORTIUMS]",
+            "start": "2025-01-30T00:00:00+00:00"
+        },
+        {
+            "title": "[REUNION COSP]",
+            "start": "2025-09-02T12:00:00+02:00"
+        },
+        {
+            "title": "[REUNION COSP]",
+            "start": "2025-11-04T12:00:00+01:00"
+        },
+        {
+            "title": "[REUNION COSP]",
+            "start": "2025-06-03T12:00:00+02:00"
+        },
+        {
+            "title": "[REUNION COSP]",
+            "start": "2025-04-01T12:00:00+02:00"
+        },
+        {
+            "title": "[REUNION COSP]",
+            "start": "2025-02-04T12:00:00+01:00"
+        },
+        {
+            "title": "[REUNION COSP]",
+            "start": "2025-07-01T12:00:00+02:00"
+        },
+        {
+            "title": "[REUNION COSP]",
+            "start": "2023-03-28T00:00:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL DES GTP] \"OPEN FRENCH CORPUS\" ARIANE/CORLI",
+            "start": "2023-04-04T07:00:00+00:00"
+        },
+        {
+            "title": "[REUNION COSP]",
+            "start": "2023-02-07T12:00:00+01:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL COORD.]",
+            "start": "2024-07-17T08:00:00+00:00"
+        },
+        {
+            "title": "[REUNION DE TRAVAIL DES CONSORTIUMS]",
+            "start": "2024-04-03T00:00:00+00:00"
+        }
+    ],
+    "[REUNION]": [
+        {
+            "title": "[REUNION] Comité de coordination",
+            "start": "2024-12-17T08:00:00+00:00"
+        },
+        {
+            "title": "[REUNION] Comité de coordination (+H-N)",
+            "start": "2024-12-05T09:00:00+00:00"
+        },
+        {
+            "title": "[REUNION] Conseil des membres en formation restreinte",
+            "start": "2023-02-19T23:30:00+00:00"
+        },
+        {
+            "title": "[REUNION] Conseil des membres en formation restreinte",
+            "start": "2023-02-22T23:30:00+00:00"
+        },
+        {
+            "title": "[REUNION] Comité de coordination",
+            "start": "2024-12-03T11:00:00+00:00"
+        },
+        {
+            "title": "[REUNION] Comité de coordination",
+            "start": "2025-01-08T08:00:00+00:00"
+        },
+        {
+            "title": "[REUNION] Comité de coordination",
+            "start": "2025-02-19T09:00:00+00:00"
+        },
+        {
+            "title": "[REUNION] Comité de coordination",
+            "start": "2025-02-12T09:30:00+00:00"
+        },
+        {
+            "title": "[REUNION] Comité de coordination",
+            "start": "2024-10-10T14:30:00+00:00"
+        },
+        {
+            "title": "[REUNION] Comité de coordination",
+            "start": "2025-01-21T12:30:00+00:00"
+        },
+        {
+            "title": "[REUNION] Comité de coordination",
+            "start": "2024-09-05T14:30:00+00:00"
+        },
+        {
+            "title": "[REUNION] Comité de coordination",
+            "start": "2025-05-20T00:00:00+00:00"
+        },
+        {
+            "title": "[REUNION] Comité de coordination",
+            "start": "2023-02-02T12:00:00+00:00"
+        },
+        {
+            "title": "[REUNION] Comité de coordination",
+            "start": "2025-01-07T08:00:00+00:00"
+        },
+        {
+            "title": "[REUNION] Comité de coordination",
+            "start": "2024-09-05T07:00:00+00:00"
+        },
+        {
+            "title": "[REUNION] Comité de coordination",
+            "start": "2024-12-12T15:30:00+00:00"
+        },
+        {
+            "title": "[REUNION] AXE 1 - GT3 : \"Identifiants (ARK/Handle) des concepts dans Open Theso\"",
+            "start": "2024-12-19T13:00:00+00:00"
+        },
+        {
+            "title": "[REUNION] Comité de coordination",
+            "start": "2024-12-19T12:00:00+00:00"
+        },
+        {
+            "title": "[REUNION] Comité de coordination",
+            "start": "2025-01-09T08:00:00+00:00"
+        },
+        {
+            "title": "[REUNION] Comité de coordination",
+            "start": "2024-11-15T14:00:00+00:00"
+        }
+    ],
+    "[ATELIER": [
+        {
+            "title": "[ATELIER THEMATIQUE] AXE 1 - GT1 - Atelier n°5 : \"Bien calibrer un projet en Humanités numériques\"",
+            "start": "2025-03-05T00:00:00+00:00"
+        },
+        {
+            "title": "[ATELIER THEMATIQUE] - GTP [ARIANE+MASA+] - \"Découverte de l’ontologie du CIDOC-CRM et initiation aux mappings de données\"",
+            "start": "2024-11-08T08:30:00+00:00"
+        },
+        {
+            "title": "[ATELIER THEMATIQUE] AXE 2 - GT5 : Métadonnées",
+            "start": "2023-09-13T12:00:00+00:00"
+        },
+        {
+            "title": "[ATELIER THEMATIQUE] AXE 1 - GT1 - Atelier n°4 : \"Bien calibrer un projet en Humanités numériques\"",
+            "start": "2024-02-19T12:00:00+00:00"
+        },
+        {
+            "title": "[ATELIER THEMATIQUE] AXE 1 - GT1 - Rencontre méthodologique  ",
+            "start": "2024-04-04T00:00:00+00:00"
+        },
+        {
+            "title": "[ATELIER THEMATIQUE] AXE 1 - GT3 : Editions numériques de qualité",
+            "start": "2023-09-26T08:00:00+00:00"
+        },
+        {
+            "title": "[ATELIER THEMATIQUE] AXE 1 - GT1 - Atelier n°2 : \"Bien calibrer un projet en Humanités numériques\"",
+            "start": "2023-10-16T12:00:00+00:00"
+        },
+        {
+            "title": "[ATELIER THEMATIQUE] AXE 1 - GT1 - Atelier n°1 : \"Bien calibrer un projet en Humanités numériques\"",
+            "start": "2023-09-20T12:00:00+00:00"
+        },
+        {
+            "title": "[ATELIER THEMATIQUE] AXE 2 - GT4 : \" Workshop on AI and Large Language Models (LLMs) for the Analysis of Large Literary Corpora\"",
+            "start": "2023-12-05T00:00:00+00:00"
+        },
+        {
+            "title": "[ATELIER THEMATIQUE] AXE 2 - GT4 : Franco Moretti  ",
+            "start": "2024-01-24T08:30:00+00:00"
+        },
+        {
+            "title": "[ATELIER THEMATIQUE] AXE 1 - GT3 : Editions numériques de qualité",
+            "start": "2023-09-13T08:00:00+00:00"
+        },
+        {
+            "title": "[ATELIER THEMATIQUE] AXE 1 - GT1 - Atelier n°3 : \"Bien calibrer un projet en Humanités numériques\"",
+            "start": "2023-11-30T13:30:00+00:00"
+        },
+        {
+            "title": "[ATELIER THEMATIQUE] AXE 2 - GT5 : Métadonnées",
+            "start": "2025-02-18T12:30:00+00:00"
+        },
+        {
+            "title": "[ATELIER THEMATIQUE] AXE 1 - GT1 - Rencontre méthodologique  - ",
+            "start": "2024-07-09T08:30:00+00:00"
+        },
+        {
+            "title": "[ATELIER THEMATIQUE] - GTP [ARIANE+MASA+] - \"Données ouvertes\"",
+            "start": "2024-03-19T00:00:00+00:00"
+        },
+        {
+            "title": "[ATELIER THEMATIQUE] AXE 2 - GT5 : Métadonnées",
+            "start": "2025-03-26T11:00:00+00:00"
+        },
+        {
+            "title": "[ATELIER THEMATIQUE] AXE 2 - GT5 : Métadonnées",
+            "start": "2024-06-06T09:00:00+00:00"
+        },
+        {
+            "title": "[ATELIER THEMATIQUE] AXE 1 - GT1 - Atelier n°5 : \"Bien calibrer un projet en Humanités numériques\"",
+            "start": "2024-03-05T00:00:00+00:00"
+        },
+        {
+            "title": "[ATELIER THEMATIQUE] AXE 2 - GT4 : Franco Moretti  ",
+            "start": "2024-05-22T07:30:00+00:00"
+        },
+        {
+            "title": "[ATELIER THEMATIQUE] AXE 1 - GT1 - Rencontre méthodologique  - ",
+            "start": "2024-09-24T13:00:00+00:00"
+        }
+    ],
+    "COLLOQUE": [
+        {
+            "title": "COLLOQUE ANNUEL DE L'ASSOCIATION FRANCOPHONE DES HUMANITES NUMERIQUES 2023",
+            "start": "2023-06-26T00:00:00+00:00"
+        },
+        {
+            "title": "COLLOQUE ANNUEL DE L'ASSOCIATION FRANCOPHONE DES HUMANITES NUMERIQUES 2023",
+            "start": "2024-05-07T00:00:00+00:00"
+        },
+        {
+            "title": "COLLOQUE ANNUEL ADHO",
+            "start": "2023-07-10T00:00:00+00:00"
+        }
+    ],
+    "Assemblée": [
+        {
+            "title": "Assemblée Générale du consortium ARIANE",
+            "start": "2023-11-08T08:00:00+00:00"
+        },
+        {
+            "title": "Assemblée générale et [Symposium ARIANE] ",
+            "start": "2024-11-26T00:00:00+00:00"
+        },
+        {
+            "title": "Assemblée générale du Consortium-HN ARIANE",
+            "start": "2025-11-14T08:00:00+00:00"
+        }
+    ],
+    "[CONFERENCE]": [
+        {
+            "title": "[CONFERENCE] AXE 2 - GT4 : Conférence de Franco Moretti  ",
+            "start": "2024-01-23T13:00:00+00:00"
+        },
+        {
+            "title": "[CONFERENCE] Julien Velcin (PR, Informatique) \"L’IA pour les sciences des textes\"",
+            "start": "2023-11-08T10:00:00+00:00"
+        },
+        {
+            "title": "[CONFERENCE] Anne-Emmanuelle Kahn (PR, Droit privé) \"Droit et IA\"",
+            "start": "2023-11-08T17:00:00+00:00"
+        },
+        {
+            "title": "[CONFERENCE] Jennifer Edmond (PR, Digital Humanities) \"Literary Studies: Close, Distant, and Everywhere in Between.\" ",
+            "start": "2023-11-09T08:30:00+00:00"
+        }
+    ],
+    "AXE": [
+        {
+            "title": "AXE 2 - GT4 : \"Le traitement automatique des textes : méthodes et concepts\"",
+            "start": "2025-06-10T12:00:00+00:00"
+        },
+        {
+            "title": "AXE 2 - GT4 : \"Le traitement automatique des textes : méthodes et concepts\"",
+            "start": "2025-10-07T12:00:00+00:00"
+        },
+        {
+            "title": "AXE 2 - GT4 : \"Le traitement automatique des textes : méthodes et concepts\"",
+            "start": "2025-01-21T13:30:00+00:00"
+        }
+    ],
+    "[": [
+        {
+            "title": "[ REUNION DE TRAVAIL AXE 1 – GT3] ",
+            "start": "2024-06-03T12:00:00+00:00"
+        }
+    ],
+    "Fourth": [
+        {
+            "title": "Fourth Conference on Computational Humanities Research",
+            "start": "2023-12-06T00:00:00+00:00"
+        }
+    ],
+    "Participation": [
+        {
+            "title": "Participation du Consortium au CS de pictorIA",
+            "start": "2024-10-21T14:00:00+00:00"
+        }
+    ],
+    "[FORMATION": [
+        {
+            "title": "[FORMATION FAIR-LINE] AXE 1 - GT1 : Import par lot dans Nakalaskribus",
+            "start": "2023-09-20T08:00:00+00:00"
+        },
+        {
+            "title": "[FORMATION FAIR-LINE] AXE 1 - GT1 : Petit-déj FAIR - atelier import par lot dans Nakalaskribus",
+            "start": "2023-04-25T07:30:00+00:00"
+        }
+    ],
+    "[ECOLE": [
+        {
+            "title": "[ECOLE THEMATIQUE ANNUELLE] AXE 1 - GT3 : Ecole thématique EThAP",
+            "start": "2023-05-30T00:00:00+00:00"
+        },
+        {
+            "title": "[ECOLE THEMATIQUE BI-ANNUELLE] AXE 2 - GT4 : \"Le traitement automatique des textes : méthodes et concepts\"",
+            "start": "2023-11-08T00:00:00+00:00"
+        },
+        {
+            "title": "[ECOLE THEMATIQUE BI-ANNUELLE] AXE 2 : \"Le traitement automatique des textes : méthodes et concepts\"",
+            "start": "2025-11-12T00:00:00+00:00"
+        }
+    ],
+    "AMIS.": [
+        {
+            "title": "AMIS. Working meeting for the European AMIS project",
+            "start": "2024-12-02T08:00:00+00:00"
+        },
+        {
+            "title": "AMIS. Working meeting for the European AMIS project",
+            "start": "2025-04-01T11:00:00+00:00"
+        },
+        {
+            "title": "AMIS. Working meeting for the European AMIS project",
+            "start": "2025-01-21T10:00:00+00:00"
+        }
+    ],
+    "EnExDi": [
+        {
+            "title": "EnExDi - Ecole de printemps",
+            "start": "2024-04-08T07:30:00+00:00"
+        },
+        {
+            "title": "EnExDi - Ecole de printemps",
+            "start": "2025-06-02T07:30:00+00:00"
+        }
+    ],
+    "[SEMINAIRE": [
+        {
+            "title": "[SEMINAIRE Interconsortium CST-HN]",
+            "start": "2023-04-07T08:00:00+00:00"
+        },
+        {
+            "title": "[SEMINAIRE TRANSVERSAL] La culture de la donnée du point de vue juridique",
+            "start": "2023-05-23T12:00:00+00:00"
+        },
+        {
+            "title": "[SEMINAIRE TRANSVERSAL] La fouille de données du point de vue juridique",
+            "start": "2023-09-14T12:00:00+00:00"
+        }
+    ],
+    "[COLLOQUE]": [
+        {
+            "title": "[COLLOQUE] AXE 1 - GT3 : Colloque \"Lexicographie : nouveaux défis\"",
+            "start": "2024-06-20T00:00:00+00:00"
+        }
+    ],
+    "": [
+        {
+            "title": " 1st OSCARS Annual General Meeting (AGM)",
+            "start": "2025-03-03T00:00:00+00:00"
+        }
+    ]
+}
