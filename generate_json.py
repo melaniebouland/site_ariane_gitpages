@@ -3,9 +3,9 @@ import json
 from generate_html import generate_html_pages
 
 # Dossier contenant les documents
-TRAVAUX_DIR = "travaux"
-OUTPUT_JSON = "documents.json"
-OUTPUT_DIR = "html_pages"
+TRAVAUX_DIR = "public/travaux"
+OUTPUT_JSON = "public/documents.json"
+OUTPUT_DIR = "public/html_pages"
 
 def generate_json(directory, output_file):
     documents = []
