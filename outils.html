@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr-fr">
 <head>
-    <base href= ".">
+    <base href=".">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" sizes="180x180" href="assets/img/logoAriane.jpg">
@@ -25,6 +25,9 @@
             left: 100%;
             margin-top: -1px;
         }
+        .category-button {
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -38,7 +41,7 @@
                     <img src="assets/img/logoAriane.jpg" alt="CST-HN ARIANE logo">
                 </a>
                 <!--Logo Humanum-->
-                <a href="https://www.huma-num.fr/"> 
+                <a href="https://www.huma-num.fr/">
                     <img src="assets/img/HN.png" alt="Huma-Num logo">
                 </a>
             </div>
@@ -129,145 +132,153 @@
                         </div>
                         <div>
                             <p class="card-text">L'ensemble des groupes de travail du consortium HN ARIANE produisent, au cours de ce projet, différents outils, scripts, recensements, etc. permettant l'amélioration de la recherche dans et autour de la littérature.Vous trouverez ici l'ensemble de leur production ainsi que les liens vers les codes sources.</p>
-                       </div>
-                       <!-- Liste des éléments avec cartes -->
+                        </div>
+                        <!-- Boutons de catégorie -->
+                        <div class="d-flex justify-content-center category-button">
+                            <button class="btn btn-primary mx-2" onclick="filterCategory('all')">Tous</button>
+                            <button class="btn btn-primary mx-2" onclick="filterCategory('script')">Script</button>
+                            <button class="btn btn-primary mx-2" onclick="filterCategory('application')">Application</button>
+                            <button class="btn btn-primary mx-2" onclick="filterCategory('recensement')">Recensement</button>
+                        </div>
+                        <!-- Liste des éléments avec cartes -->
                         <div class="container my-4">
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <div class="card shadow-sm rounded-4">
-                                    <div class="row g-0 align-items-center">
-                                        <div class="col-md-4">
-                                            <img src="assets/img/BordeauxAriane.png" class="img-fluid rounded-start" style="margin-left: 8px;">
+                            <div class="row" id="card-container">
+                                <div class="col-md-6 mb-4" data-category="recensement">
+                                    <div class="card shadow-sm rounded-4">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-md-4">
+                                                <img src="assets/img/SLBordeauxAriane.png" class="img-fluid rounded-start" style="margin-left: 8px;">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Recensement d'ontologies, thésaurus et vocabulaires contrôlées</h5>
+                                                    <p class="card-text">Le GT5 a effectué un recensement complet de l'ensemble des ontologies, thésaurus et vocabulaires contrôlées publiées et en libre accès, portant sur ou autour de la littérature.</p>
+                                                    <a href="https://axe-2-gt5.gitpages.huma-num.fr/recensement/?state=[]&tab=keys" class="btn btn-primary" target="_blank">Voir</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Recensement d'ontologies, thésaurus et vocabulaires contrôlées</h5>
-                                                <p class="card-text">Le GT5 a effectué un recensement complet de l'ensemble des ontologies, thésaurus et vocabulaires contrôlées publiées et en libre accès, portant sur ou autour de la littérature.</p>
-                                                <a href="https://axe-2-gt5.gitpages.huma-num.fr/recensement/?state=[]&tab=keys" class="btn btn-primary" target="_blank">Voir</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4" data-category="script">
+                                    <div class="card shadow-sm rounded-4">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-md-4">
+                                                <img src="assets/img/SLOrangeHNAriane.png" class="img-fluid rounded-start" style="margin-left: 8px;">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Script de conversion</h5>
+                                                    <p class="card-text">Le GT3 a créé un script de conversion en python permettant de transformer un document RDF en un document en XML-TEI.</p>
+                                                    <a href="https://gitlab.huma-num.fr/axe-1-gt3-outils-et-pratiques-editoriales/scripts/scripts-tei-afe" class="btn btn-primary" target="_blank">Voir</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4" data-category="application">
+                                    <div class="card shadow-sm rounded-4">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-md-4">
+                                                <img src="assets/img/SLOrangeClairHNAriane.png" class="img-fluid rounded-start" style="margin-left: 8px;">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">D3 Force Diagram</h5>
+                                                    <p class="card-text">L'atelier Scripts du GT3 a produit un diagramme dynamique permettant une représentation de l'ensemble des scripts présents. Ce diagramme est basé sur leur recensement.</p>
+                                                    <a href="https://d3-force-diagram-axe-1-gt3-outils-et-pratiques-e-72538980624726.gitpages.huma-num.fr/" class="btn btn-primary" target="_blank">Voir</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4" data-category="application">
+                                    <div class="card shadow-sm rounded-4">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-md-4">
+                                                <img src="assets/img/SLJaunePaleHNAriane.png" class="img-fluid rounded-start" style="margin-left: 8px;">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Formation du 8 et 9 novembre 2023</h5>
+                                                    <p class="card-text">En marge de son Assemblée Générale de 2023, le consortium HN Ariane a tenu une formation "Initiation à l'analyse automatique de textes en SHS".</p>
+                                                    <a href="https://gitlab.huma-num.fr/axe-2-formations/formation-lyon-8-9-novembre-2023" class="btn btn-primary" target="_blank">Voir</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4" data-category="recensement">
+                                    <div class="card shadow-sm rounded-4">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-md-4">
+                                                <img src="assets/img/SLBordeauxAriane.png" class="img-fluid rounded-start" style="margin-left: 8px;">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Recensement des projets d'éditions numériques</h5>
+                                                    <p class="card-text">L'atelier lexicographie et textes anciens a réalisé un recensement des projets d'éditions numériques des textes.</p>
+                                                    <a href="https://axe-1-gt3-outils-et-pratiques-editoriales.gitpages.huma-num.fr/lex/recensement/?state=[]&tab=keys" class="btn btn-primary" target="_blank">Voir</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4" data-category="recensement">
+                                    <div class="card shadow-sm rounded-4">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-md-4">
+                                                <img src="assets/img/SLOrangeHNAriane.png" class="img-fluid rounded-start" style="margin-left: 8px;">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Recensement de scripts</h5>
+                                                    <p class="card-text">Le GT3 a recensé l'ensemble des scripts et logiciels utilisés dans le cadre de chaîne d'éditions numériques.</p>
+                                                    <a href="https://axe-1-gt3-outils-et-pratiques-editoriales.gitpages.huma-num.fr/scripts/recensement/?state=[]&tab=keys" class="btn btn-primary" target="_blank">Voir</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4" data-category="application">
+                                    <div class="card shadow-sm rounded-4">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-md-4">
+                                                <img src="assets/img/SLOrangeClairHNAriane.png" class="img-fluid rounded-start" style="margin-left: 8px;">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Scenaristyler</h5>
+                                                    <p class="card-text">Création, au sein du GT3, d'un ScenariStyler par Axel Renon (stagiaire) pour reprendre la charte graphique du consortium dans les différents scénari.</p>
+                                                    <a href="https://gitlab.huma-num.fr/axe-1-gt3-outils-et-pratiques-editoriales/lex/scenaristyler" class="btn btn-primary" target="_blank">Voir</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4" data-category="application">
+                                    <div class="card shadow-sm rounded-4">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-md-4">
+                                                <img src="assets/img/SLJaunePaleHNAriane.png" class="img-fluid rounded-start" style="margin-left: 8px;">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Site temporaire du GT3</h5>
+                                                    <p class="card-text">Création d'un site temporaire pour le GT3, par Amy Faall (stagiaire), afin de mettre en avant les avancements et les différents ateliers du GT. Le site a été repris et modifié pour créer le site actuel du consortium.</p>
+                                                    <a href="https://gitlab.huma-num.fr/axe-1-gt3-outils-et-pratiques-editoriales/site" class="btn btn-primary" target="_blank">Voir</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-md-6 mb-4">
-                                <div class="card shadow-sm rounded-4">
-                                    <div class="row g-0 align-items-center">
-                                        <div class="col-md-4">
-                                            <img src="assets/img/OrangeHNAriane.png" class="img-fluid rounded-start" style="margin-left: 8px;">
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Script de conversion</h5>
-                                                <p class="card-text">Le GT3 a créé un script de conservion en python permettant de transformer un document RDF en un document en XML-TEI.</p>
-                                                <a href="https://gitlab.huma-num.fr/axe-1-gt3-outils-et-pratiques-editoriales/scripts/scripts-tei-afe" class="btn btn-primary" target="_blank">Voir</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 mb-4">
-                                <div class="card shadow-sm rounded-4">
-                                    <div class="row g-0 align-items-center">
-                                        <div class="col-md-4">
-                                            <img src="assets/img/OrangeClairHNAriane.png" class="img-fluid rounded-start" style="margin-left: 8px;">
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body">
-                                                <h5 class="card-title">D3 Force Diagram</h5>
-                                                <p class="card-text">L'atelier Scripts du GT3 a produit un diagramme dynamique permettant une représentation de l'ensemble des scripts présents. Ce diagramme est basé sur leur recensement.</p>
-                                                <a href="https://d3-force-diagram-axe-1-gt3-outils-et-pratiques-e-72538980624726.gitpages.huma-num.fr/" class="btn btn-primary" target="_blank">Voir</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                
-                            <div class="col-md-6 mb-4">
-                                <div class="card shadow-sm rounded-4">
-                                    <div class="row g-0 align-items-center">
-                                        <div class="col-md-4">
-                                            <img src="assets/img/JaunePaleHNAriane.png" class="img-fluid rounded-start" style="margin-left: 8px;">
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Formation du 8 et 9 novembre 2023</h5>
-                                                <p class="card-text">En marge de son Assemblée Générale de 2023, le consortium HN Ariane a tenu une formation "Initiation à l'analyse automatique de textes en SHS".</p>
-                                                <a href="https://gitlab.huma-num.fr/axe-2-formations/formation-lyon-8-9-novembre-2023" class="btn btn-primary" target="_blank">Voir</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>                            
-
-                            <div class="col-md-6 mb-4">
-                                <div class="card shadow-sm rounded-4">
-                                    <div class="row g-0 align-items-center">
-                                        <div class="col-md-4">
-                                            <img src="assets/img/BordeauxAriane.png" class="img-fluid rounded-start" style="margin-left: 8px;">
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Recensement des projets d'éditions numériques</h5>
-                                                <p class="card-text">L'atelier lexicographie et textes anciens a réalisé un recensement des projets d'éditions numériques des textes.</p>
-                                                <a href="https://axe-1-gt3-outils-et-pratiques-editoriales.gitpages.huma-num.fr/lex/recensement/?state=[]&tab=keys" class="btn btn-primary" target="_blank">Voir</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>    
-
-                            <div class="col-md-6 mb-4">
-                                <div class="card shadow-sm rounded-4">
-                                    <div class="row g-0 align-items-center">
-                                        <div class="col-md-4">
-                                            <img src="assets/img/OrangeHNAriane.png" class="img-fluid rounded-start" style="margin-left: 8px;">
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Recensement de scripts</h5>
-                                                <p class="card-text">Le GT3 a recensé l'ensemble des scripts et logiciels utilisés dans le cadre de chaîne d'éditions numériques.</p>
-                                                <a href="https://axe-1-gt3-outils-et-pratiques-editoriales.gitpages.huma-num.fr/scripts/recensement/?state=[]&tab=keys" class="btn btn-primary" target="_blank">Voir</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>    
-                            </div>
-
-                            <div class="col-md-6 mb-4">    
-                                <div class="card shadow-sm rounded-4">
-                                    <div class="row g-0 align-items-center">
-                                        <div class="col-md-4">
-                                            <img src="assets/img/OrangeClairHNAriane.png" class="img-fluid rounded-start" style="margin-left: 8px;">
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Scenaristyler</h5>
-                                                <p class="card-text">Création, au sien du GT3, d'un ScenariStyler par Axel Renon (stagiaire) pour reprendre la charte graphique du consortium dans les différents scénari.</p>
-                                                <a href="https://gitlab.huma-num.fr/axe-1-gt3-outils-et-pratiques-editoriales/lex/scenaristyler" class="btn btn-primary" target="_blank">Voir</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>                            
-
-                            <div class="col-md-6 mb-4">
-                                <div class="card shadow-sm rounded-4">
-                                    <div class="row g-0 align-items-center">
-                                        <div class="col-md-4">
-                                            <img src="assets/img/JaunePaleHNAriane.png" class="img-fluid rounded-start" style="margin-left: 8px;">
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Site temporaire du GT3</h5>
-                                                <p class="card-text">Création d'un site temporaire pour le GT3, par Amy Faall (stagiaire), afin de mettre en avant les avancements et les différents ateliers du GT. Le site a été repris et modifié pour créer le site actuel du consortium.</p>
-                                                <a href="https://gitlab.huma-num.fr/axe-1-gt3-outils-et-pratiques-editoriales/site" class="btn btn-primary" target="_blank">Voir</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
                         </div>
                     </div>
                 </div>
@@ -314,6 +325,18 @@
             </a>
           </div>
         </div>
-    </footer>       
+    </footer>
+    <script>
+        function filterCategory(category) {
+            const cards = document.querySelectorAll('#card-container .col-md-6');
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 </html>
