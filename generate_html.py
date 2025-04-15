@@ -1,9 +1,11 @@
-import json
 import os
+import json
 from datetime import datetime
 
-INPUT_JSON = "public/documents.json"
-OUTPUT_DIR = "public/html_pages"
+# Permet de générer l'ensemble des pages HTML travaux de chaque GT à partir du fichier JSON
+
+INPUT_JSON = "documents.json"
+OUTPUT_DIR = "html_pages"
 HTML_TEMPLATE = """<!doctype html>
 <html lang="fr-fr">
 <head>
@@ -14,7 +16,7 @@ HTML_TEMPLATE = """<!doctype html>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/main.css">
-    <title>{title}</title> 
+    <title>{title}</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         .dropdown:hover>.dropdown-menu {{display: block;}}
@@ -42,7 +44,7 @@ HTML_TEMPLATE = """<!doctype html>
                     <img src="assets/img/logoAriane.jpg" alt="CST-HN ARIANE logo">
                 </a>
                 <!--Logo Humanum-->
-                <a href="https://www.huma-num.fr/"> 
+                <a href="https://www.huma-num.fr/">
                     <img src="assets/img/HN.png" alt="Huma-Num logo">
                 </a>
             </div>
@@ -57,17 +59,17 @@ HTML_TEMPLATE = """<!doctype html>
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item dropdown-toggle" href="https://consortiumariane.gitpages.huma-num.fr/axe1">Axe 1</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT1/GT1.html">GT1</a></li>
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT2/GT2.html">GT2</a></li>
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT3/GT3.html">GT3</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT1/GT1.html">Labellisation</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT2/GT2.html">Acquisition de données et transcription par ordinateur</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT3/GT3.html">Outils et pratiques éditoriales</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item dropdown-toggle" href="https://consortiumariane.gitpages.huma-num.fr/axe2">Axe 2</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/GT4/GT4.html">GT4</a></li>
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/GT5/GT5.html">GT5</a></li>
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/GT6/GT6.html">GT6</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/GT4/GT4.html">Analyse automatique de texte</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/GT5/GT5.html">Métadonnées et modélisation de données</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/GT6/GT6.html">Open French Corpus</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
@@ -87,47 +89,38 @@ HTML_TEMPLATE = """<!doctype html>
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item dropdown-toggle">Axe 1</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT1/travaux_GT1.html">GT1</a></li>
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT2/travaux_GT2.html">GT2</a></li>
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT3/travaux_GT3.html">GT3</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_GT1.html">GT1</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_GT2.html">GT2</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_GT3.html">GT3</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item dropdown-toggle">Axe 2</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/GT4/travaux_GT4.html">GT4</a></li>
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/GT5/travaux_GT5.html">GT5</a></li>
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/GT6/travaux_GT6.html">GT6</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/html_pages/travaux_GT4.html">GT4</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/html_pages/travaux_GT5.html">GT5</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/html_pages/travaux_GT6.html">GT6</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item dropdown-toggle">Axe 3</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe3/ethique/travaux_ethique.html">Enjeux éthiques</a></li>
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe3/juridique/travaux_juridique.html">Questions juridiques</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe3/html_pages/travaux_ethique.html">Enjeux éthiques</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe3/html_pages/travaux_juridique.html">Questions juridiques</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-gray-400 text-xl transition hover:text-gray-400/75" href="https://consortiumariane.gitpages.huma-num.fr/axe1/actualites.html">Actualités</a>
-                </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-gray-400 text-xl transition hover:text-gray-400/75" href="https://docs.google.com/forms/d/1nxWiaj88LY7R-poxxlTiUxdvyIH5hL5eBHFjgsfsKGg/viewform?edit_requested=true">Nous rejoindre</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-gray-400 text-xl transition hover:text-gray-400/75" href="#">Actualités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-gray-400 text-xl transition hover:text-gray-400/75" href="https://docs.google.com/forms/d/1nxWiaj88LY7R-poxxlTiUxdvyIH5hL5eBHFjgsfsKGg/viewform?edit_requested=true">Nous rejoindre</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <!-- Fil d'Ariane -->
-    <nav aria-label="breadcrumb" class="container my-4">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="https://consortiumariane.gitpages.huma-num.fr/axe1.html">Axe 1</a></li>
-            <li class="breadcrumb-item"><a href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT{gt_number}.html">GT{gt_number}</a></li>
-            <li class="breadcrumb-item"><a href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT{gt_number}/travaux_GT{gt_number}.html">Travaux du GT{gt_number}</a></li>
-        </ol>
-    </nav>
 
     <!-- Contenu -->
     <div class="container-fluid">
@@ -145,15 +138,6 @@ HTML_TEMPLATE = """<!doctype html>
                     </div>
                 </div>
             </main>
-            <aside class="col-md-3 sidebar">
-                <div class="container-fluid" style="background-color:#19191726; padding: 28px;">
-                    <div class="container">
-                        <h5>Les compte-rendus du {title}</h5>
-                        <p>Suivez l'ensemble de l'activité et des réunions du GT.</p>
-                        <a href="travaux/#" class="btn btn-primary btn-sm">Voir plus</a>
-                    </div>
-                </div>
-            </aside>
         </div>
     </div>
 
@@ -186,23 +170,38 @@ def create_html_page(title, gt_number, files, output_path):
         print(f"Erreur : title ou gt_number est invalide. title={title}, gt_number={gt_number}")
         return
 
-    document_items = "\n".join(
-        f"""
-        <div class="col-md-4 mb-4 d-flex">
-            <div class="card w-100">
-                <a href="../{file.get('path', '#')}" target="_blank" style="text-decoration: none; color: inherit;">
-                    <div class="card-body">
-                        <h2 class="card-title">{file.get('name', 'Document inconnu')}</h2>
-                    </div>
-                </a>
+    # Regrouper les documents par année
+    documents_by_year = {}
+    for file in files:
+        if isinstance(file, dict) and "date" in file:
+            year = datetime.strptime(file["date"], "%Y-%m-%d").year
+            if year not in documents_by_year:
+                documents_by_year[year] = []
+            documents_by_year[year].append(file)
+
+    # Générer les sections HTML pour chaque année
+    document_items = []
+    for year, docs in sorted(documents_by_year.items(), reverse=True):
+        year_items = "\n".join(
+            f"""
+            <div class="col-md-4 mb-4 d-flex">
+                <div class="card w-100">
+                    <a href="../{file.get('path', '#')}" target="_blank" style="text-decoration: none; color: inherit;">
+                        <div class="card-body">
+                            <h2 class="card-title">{file.get('title', 'Document inconnu')}</h2>
+                        </div>
+                    </a>
+                </div>
             </div>
-        </div>
-        """ for file in files if isinstance(file, dict)
-    )
+            """ for file in docs
+        )
+        document_items.append(f"<div class='row'><h2>{year}</h2><hr>{year_items}</div>")
 
     if not document_items:
         print("Aucun document à afficher.")
         document_items = "<p>Aucun document disponible.</p>"
+    else:
+        document_items = "\n".join(document_items)
 
     try:
         html_content = HTML_TEMPLATE.format(title=title, gt_number=gt_number, documents_list=document_items)
@@ -237,15 +236,33 @@ def categorize_documents(documents):
         if "name" not in doc or "path" not in doc:
             print(f"Document invalide: {doc}")
             continue
-        gt_prefix = doc["name"].split("_")[0]
+
+        # Extraction du nom du document après GT*_DATE_
+        parts = doc["name"].split("_")
+        if len(parts) < 3:
+            continue
+        gt_prefix = parts[0]
+        date_part = parts[1]
+        doc_title = "_".join(parts[2:]).replace("_", " ")
+
+        # Ajout du titre au document
+        doc["title"] = doc_title
+
+        # Ajout de la date au document si elle n'existe pas
+        if "date" not in doc:
+            try:
+                doc["date"] = datetime.strptime(date_part, "%Y-%m-%d").strftime("%Y-%m-%d")
+            except ValueError:
+                doc["date"] = "2025-01-01"  # Date par défaut si le format est invalide
+
         if gt_prefix not in categories:
             categories[gt_prefix] = []
         categories[gt_prefix].append(doc)
-    
-    # Tri des documents : d'abord par nom, puis par date (descendant)
+
+    # Tri des documents : d'abord par date (descendant), puis par titre alphabétique
     for gt_prefix in categories:
-        categories[gt_prefix].sort(key=lambda x: (x["name"], datetime.strptime(x["date"], "%Y-%m-%d") if "date" in x else datetime.min), reverse=True)
-    
+        categories[gt_prefix].sort(key=lambda x: (datetime.strptime(x["date"], "%Y-%m-%d") if "date" in x else datetime.min, x["title"]), reverse=True)
+
     return categories
 
 def generate_html_pages(input_json, output_dir):
