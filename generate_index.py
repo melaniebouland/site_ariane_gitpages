@@ -4,7 +4,7 @@ from datetime import datetime
 from collections import defaultdict
 
 # Charger les documents depuis documents.json
-with open("documents.json", "r", encoding="utf-8") as f:
+with open("public/documents.json", "r", encoding="utf-8") as f:
     documents = json.load(f)
 
 # Organiser les documents par GT puis par année
@@ -255,10 +255,10 @@ html_output = f"""<!DOCTYPE html>
 """
 
 # Sauvegarde
-output_dir = "html_pages"
+output_dir = "public/html_pages"
 os.makedirs(output_dir, exist_ok=True)
-output_path = os.path.join(output_dir, "index.html")
+output_path = os.path.join(output_dir, "travaux_CS.html")
 with open(output_path, "w", encoding="utf-8") as f:
     f.write(html_output)
 
-print("✅ Fichier 'html_pages/index.html' généré avec une présentation améliorée.")
+print("✅ Fichier 'html_pages/travaux_CS.html' généré avec une présentation améliorée.")

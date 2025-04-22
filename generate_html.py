@@ -4,8 +4,8 @@ from datetime import datetime
 
 # Permet de générer l'ensemble des pages HTML travaux de chaque GT à partir du fichier JSON
 
-INPUT_JSON = "documents.json"
-OUTPUT_DIR = "html_pages"
+INPUT_JSON = "public/documents.json"
+OUTPUT_DIR = "public/html_pages"
 HTML_TEMPLATE = """<!doctype html>
 <html lang="fr-fr">
 <head>

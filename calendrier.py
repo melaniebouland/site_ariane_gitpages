@@ -46,13 +46,14 @@ if response.status_code == 200:
             })
 
     # Enregistrer les événements dans un fichier JSON
-    with open("calendrier.json", "w", encoding="utf-8") as json_file:
+    with open("public/calendrier.json", "w", encoding="utf-8") as json_file:
         json.dump(events_by_axe, json_file, ensure_ascii=False, indent=4)
 
     print("Les événements ont été enregistrés dans le fichier calendrier.json.")
 
     # Créer un dossier pour les pages HTML
-    os.makedirs("calendrier_pages", exist_ok=True)
+    output_dir = "public/calendrier_pages"
+    os.makedirs(output_dir, exist_ok=True)
 
     # Générer une page HTML pour chaque Axe
     for axe, gts in events_by_axe.items():
@@ -227,7 +228,7 @@ if response.status_code == 200:
 </html>
 """
 
-        with open(f"calendrier_pages/{safe_axe}.html", "w", encoding="utf-8") as html_file:
+        with open(f"{output_dir}/{safe_axe}.html", "w", encoding="utf-8") as html_file:
             html_file.write(html_content)
 
     print("Les pages HTML ont été générées avec filtrage par année pour chaque GT indépendamment.")

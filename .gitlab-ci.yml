@@ -1,0 +1,67 @@
+stages:
+  - build
+  - generate
+  - deploy
+
+# 1. Génération de documents.json
+build_json:
+  stage: build
+  image: python:3.10
+  script:
+    - python generate_json.py  # Génère documents.json à partir des travaux
+  artifacts:
+    paths:
+      - public
+
+# 2. Génération des pages calendrier
+build_calendar:
+  stage: build
+  image: python:3.10
+  script:
+    - pip install -r requirements.txt
+    - python calendrier.py
+  artifacts:
+    paths:
+      - public/calendrier_pages
+
+# 3. Génération des pages HTML à partir de documents.json
+generate_html:
+  stage: generate
+  image: python:3.10
+  script:
+    - cp public/documents.json .
+    - python generate_index.py documents.json
+  artifacts:
+    paths:
+      - public/html_pages
+
+# 4. Déploiement sur GitLab Pages
+pages:
+  stage: deploy
+  script:
+    - cp -r public/html_pages/* public/
+    - cp -r public/calendrier_pages/* public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
+
+# 5. Commit et push automatique des fichiers générés dans un dossier pages_auto/
+commit_generated_files:
+  stage: deploy
+  image: alpine:latest
+  only:
+    - main
+  before_script:
+    - apk add --no-cache git
+    - git config --global user.name "consortiumariane"
+    - git config --global user.email "fatiha.idmhand@univ-poitiers.fr"
+    - git config pull.rebase false
+  script:
+    - git checkout main
+    - git pull origin main
+    - git add public/
+    - git commit -m "Mise à jour automatique du contenu de public/ [skip ci]" || echo "Pas de modifications à committer"
+    - git push https://oauth2:${CI_PUSH_TOKEN}@gitlab.huma-num.fr/consortiumariane/axe1.git HEAD:main
+

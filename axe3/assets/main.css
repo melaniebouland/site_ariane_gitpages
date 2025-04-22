@@ -59,16 +59,6 @@ body {
     font-size: 1rem; /* Taille du texte */
     color: #6c757d; /* Couleur du texte */
 }
-
-.card-img-top {
-    width: 100%; /* Assure que l'image occupe toute la largeur de la vignette */
-    height: 200px; /* Fixe une hauteur uniforme pour toutes les images */
-    object-fit: cover; /* Ajuste l'image pour qu'elle remplisse l'espace sans déformer */
-    margin: auto;/*Centre l'image horizontalement */
-    display: block;/* Obligatoire pour que le margin:auto fonctionne avec les images*/
-}
-
-
 /* hr positionnement*/
 .title-container {
     display: flex;
@@ -90,9 +80,6 @@ body {
 /* carte inventaire style */
 .card {
     transition: box-shadow 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .card:hover {
@@ -182,5 +169,3 @@ footer .text-center {
 footer div:last-child {
     margin-left: 50px; /* Sépare davantage les liens */
 }
-  
-  
