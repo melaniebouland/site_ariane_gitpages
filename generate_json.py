@@ -4,7 +4,7 @@ from datetime import datetime
 from generate_html import generate_html_pages
 
 # Dossier contenant les documents
-TRAVAUX_DIR = "public/travaux"
+TRAVAUX_DIR = "travaux"
 OUTPUT_JSON = "public/documents.json"
 OUTPUT_DIR = "public/html_pages"
 

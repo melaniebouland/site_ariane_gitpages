@@ -61,12 +61,13 @@ body {
 }
 
 .card-img-top {
-    width: auto;
-    height: 150px;
-    object-fit: cover;
-    margin:auto;
-    display: block;
+    width: 90%; /* Assure que l'image occupe toute la largeur de la vignette */
+    height: 150px; /* Fixe une hauteur uniforme pour toutes les images */
+    object-fit: cover; /* Ajuste l'image pour qu'elle remplisse l'espace sans déformer */
+    margin: auto;/*Centre l'image horizontalement */
+    display: block;/* Obligatoire pour que le margin:auto fonctionne avec les images*/
 }
+
 
 /* hr positionnement*/
 .title-container {
@@ -144,50 +145,26 @@ body {
     max-width: 1200px; /* Largeur maximale pour centrer le contenu */
     margin: 0 auto; /* Centre le contenu horizontalement */
 }
-.btn {
-    background-color: rgb(151, 150, 151);
-    color: #ffffff;
-    border: 1px solid rgb(151, 150, 151);
-}
 .btn-primary  {
     background-color: #fff;
     border-color: rgb(143 0 6);
     color: black;
 }
-.btn-secondary {
+.btn-primary:hover {
+    background-color: rgb(143 0 6);
+    color: #fff;
+    border: rgb(143 0 6);
+}
+.btn-outline-danger{
     background-color: #fff;
     border-color: rgb(143 0 6);
     color: black;
 }
-.btn-primary:hover  {
+
+.btn-outline-danger:hover{
     background-color: rgb(143 0 6);
-    border-color: rgb(143 0 6);
-}
-
-/* Couleurs spécifiques au hover pour chaque catégorie */
-.btn-script:hover {
-    background-color: rgb(234, 91, 39); /* Couleur pour "script" */
-    color: #ffffff;
-}
-
-.btn-application:hover {
-    background-color: rgb(242, 146, 32); /* Couleur pour "application" */
-    color: #ffffff;
-}
-
-.btn-recensement:hover {
-    background-color: rgb(153, 24, 21); /* Couleur pour "recensement" */
-    color: #ffffff;
-}
-
-.btn-documentation:hover {
-    background-color: rgb(248, 176, 58); /* Couleur pour "documentation" */
-    color: #ffffff;
-}
-
-.btn-all:hover {
-    background-color: rgb(151, 150, 151); /* Couleur pour "Tous" */
-    color: #ffffff;
+    color: #fff;
+    border: rgb(143 0 6);
 }
 .card-header{
     background-color: rgb(143 0 6);

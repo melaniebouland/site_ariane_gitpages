@@ -59,6 +59,15 @@ body {
     font-size: 1rem; /* Taille du texte */
     color: #6c757d; /* Couleur du texte */
 }
+
+.card-img-top {
+    width: auto;
+    height: 150px;
+    object-fit: cover;
+    margin:auto;
+    display: block;
+}
+
 /* hr positionnement*/
 .title-container {
     display: flex;

@@ -1,3 +1,7 @@
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+
 stages:
   - build
   - generate
@@ -8,10 +12,21 @@ build_json:
   stage: build
   image: python:3.10
   script:
-    - python generate_json.py  # Génère documents.json à partir des travaux
+    - python generate_json.py
   artifacts:
     paths:
       - public
+
+# 1bis. Copier les PDF dans public/travaux/
+copy_documents:
+  stage: build
+  image: alpine:latest
+  script:
+    - mkdir -p public/travaux
+    - cp -r travaux/* public/travaux/
+  artifacts:
+    paths:
+      - public/travaux
 
 # 2. Génération des pages calendrier
 build_calendar:
@@ -24,7 +39,7 @@ build_calendar:
     paths:
       - public/calendrier_pages
 
-# 3. Génération des pages HTML à partir de documents.json
+# 3. Génération des pages HTML
 generate_html:
   stage: generate
   image: python:3.10
@@ -41,13 +56,14 @@ pages:
   script:
     - cp -r public/html_pages/* public/
     - cp -r public/calendrier_pages/* public/
+    - cp -r public/travaux/* public/
   artifacts:
     paths:
       - public
   only:
     - main
 
-# 5. Commit et push automatique des fichiers générés dans un dossier pages_auto/
+# 5. Commit des fichiers générés
 commit_generated_files:
   stage: deploy
   image: alpine:latest
@@ -59,9 +75,12 @@ commit_generated_files:
     - git config --global user.email "fatiha.idmhand@univ-poitiers.fr"
     - git config pull.rebase false
   script:
+    - git fetch origin main
+    - git reset --hard origin/main
+    - git clean -fdx
     - git checkout main
     - git pull origin main
     - git add public/
+    - git add travaux/
     - git commit -m "Mise à jour automatique du contenu de public/ [skip ci]" || echo "Pas de modifications à committer"
     - git push https://oauth2:${CI_PUSH_TOKEN}@gitlab.huma-num.fr/consortiumariane/axe1.git HEAD:main
-
