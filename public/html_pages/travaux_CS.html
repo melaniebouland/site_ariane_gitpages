@@ -1,14 +1,13 @@
-<!doctype html>
-<html lang="fr-fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-    <base href=".">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" sizes="180x180" href="assets/img/logoAriane.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/main.css">
-    <title>Travaux du GT6 - Open French Corpus</title>
+    <title>Ariane | Travaux</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         .dropdown:hover>.dropdown-menu {display: block;}
@@ -23,6 +22,8 @@
             left: 100%;
             margin-top: -1px;
         }
+        body { background-color: #f8f9fa; }
+        .card-title { font-size: 1rem; }
     </style>
 </head>
 <body>
@@ -124,34 +125,203 @@
         </div>
     </header>
 
-    <!-- Contenu -->
-    <div class="container-fluid">
-        <div class="row">
-            <main class="col-md-9 content">
-                <div class="container-fluid">
-                    <div class="container">
-                        <div class="title-container">
-                            <h1>Les travaux du GT6</h1>
-                            <hr>
-                        </div>
-                        <div class="row">
-                            <div class='row'><h2>2023</h2><hr>
-            <div class="col-md-4 mb-4 d-flex">
-                <div class="card w-100">
-                    <a href="../travaux\GT6_2023_Test.pdf" target="_blank" style="text-decoration: none; color: inherit;">
-                        <div class="card-body">
-                            <h2 class="card-title">Test.pdf</h2>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </div>
-    </div>    
+    <main class="container">
+        <h1 class="mb-4">Travaux classés par GT</h1>
+        
+<div class="filters my-4 p-3 border rounded bg-light">
+  <div class="row">
+    <div class="col-md-6 mb-2">
+      <label for="gt-filter" class="form-label">Filtrer par GT :</label>
+      <select id="gt-filter" class="form-select">
+        <option value="all">Tous</option>
+        <option value="GT1">GT1</option><option value="GT2">GT2</option><option value="GT3">GT3</option><option value="GT4">GT4</option><option value="GT5">GT5</option><option value="GT6">GT6</option><option value="juridique">juridique</option>
+      </select>
+    </div>
+    <div class="col-md-6 mb-2">
+      <label for="year-filter" class="form-label">Filtrer par année :</label>
+      <select id="year-filter" class="form-select">
+        <option value="all">Toutes</option>
+        <option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+        <section class="gt-section mb-5" data-gt="GT1">
+  <h2 class="mt-5">GT1</h2>
+  <div class="year-block mb-3" data-year="2023">
+    <h4 class="text-secondary">2023</h4>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<div class="col">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5 class="card-title">Test</h5>
+      <a href="../travaux\GT1_2023_Test.pdf" target="_blank" class="btn btn-primary btn-sm">Consulter</a>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+<section class="gt-section mb-5" data-gt="GT2">
+  <h2 class="mt-5">GT2</h2>
+  <div class="year-block mb-3" data-year="2023">
+    <h4 class="text-secondary">2023</h4>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<div class="col">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5 class="card-title">Test</h5>
+      <a href="../travaux\GT2_2023_Test.pdf" target="_blank" class="btn btn-primary btn-sm">Consulter</a>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+<section class="gt-section mb-5" data-gt="GT3">
+  <h2 class="mt-5">GT3</h2>
+  <div class="year-block mb-3" data-year="2024">
+    <h4 class="text-secondary">2024</h4>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<div class="col">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5 class="card-title">CR_Stage</h5>
+      <a href="../travaux\GT3_2024_CR_Stage.pdf" target="_blank" class="btn btn-primary btn-sm">Consulter</a>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5 class="card-title">LEX_Atelier</h5>
+      <a href="../travaux\GT3_2024-09-26_LEX_Atelier.pdf" target="_blank" class="btn btn-primary btn-sm">Consulter</a>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5 class="card-title">LEX_CR_Atelier</h5>
+      <a href="../travaux\GT3_2024_LEX_CR_Atelier.pdf" target="_blank" class="btn btn-primary btn-sm">Consulter</a>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5 class="card-title">Reunion</h5>
+      <a href="../travaux\GT3_2024-09-24_Reunion.pdf" target="_blank" class="btn btn-primary btn-sm">Consulter</a>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5 class="card-title">Scripts_CR</h5>
+      <a href="../travaux\GT3_2024_Scripts_CR.pdf" target="_blank" class="btn btn-primary btn-sm">Consulter</a>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="year-block mb-3" data-year="2023">
+    <h4 class="text-secondary">2023</h4>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<div class="col">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5 class="card-title">Prog_journee_lancement</h5>
+      <a href="../travaux\GT3_2023_Prog_journee_lancement.pdf" target="_blank" class="btn btn-primary btn-sm">Consulter</a>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5 class="card-title">Scripts_CR</h5>
+      <a href="../travaux\GT3_2023_Scripts_CR.pdf" target="_blank" class="btn btn-primary btn-sm">Consulter</a>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+<section class="gt-section mb-5" data-gt="GT4">
+  <h2 class="mt-5">GT4</h2>
+  <div class="year-block mb-3" data-year="2023">
+    <h4 class="text-secondary">2023</h4>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<div class="col">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5 class="card-title">Test</h5>
+      <a href="../travaux\GT4_2023_Test.pdf" target="_blank" class="btn btn-primary btn-sm">Consulter</a>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+<section class="gt-section mb-5" data-gt="GT5">
+  <h2 class="mt-5">GT5</h2>
+  <div class="year-block mb-3" data-year="2023">
+    <h4 class="text-secondary">2023</h4>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<div class="col">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5 class="card-title">Test</h5>
+      <a href="../travaux\GT5_2023_Test.pdf" target="_blank" class="btn btn-primary btn-sm">Consulter</a>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+<section class="gt-section mb-5" data-gt="GT6">
+  <h2 class="mt-5">GT6</h2>
+  <div class="year-block mb-3" data-year="2023">
+    <h4 class="text-secondary">2023</h4>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<div class="col">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5 class="card-title">Test</h5>
+      <a href="../travaux\GT6_2023_Test.pdf" target="_blank" class="btn btn-primary btn-sm">Consulter</a>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+<section class="gt-section mb-5" data-gt="juridique">
+  <h2 class="mt-5">juridique</h2>
+  <div class="year-block mb-3" data-year="2025">
+    <h4 class="text-secondary">2025</h4>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<div class="col">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5 class="card-title">05_17_Exception_Enseignement_Recherche</h5>
+      <a href="../travaux\juridique_2025_05_17_Exception_Enseignement_Recherche.pdf" target="_blank" class="btn btn-primary btn-sm">Consulter</a>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5 class="card-title">05_17_Exception_Text_and_Data_Mining</h5>
+      <a href="../travaux\juridique_2025_05_17_Exception_Text_and_Data_Mining.pdf" target="_blank" class="btn btn-primary btn-sm">Consulter</a>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+    </main>
     <!-- Footer -->
     <footer class="bg-light py-3">
         <div class="container d-flex justify-content-between align-items-center">
@@ -171,5 +341,35 @@
           </div>
         </div>
       </footer>
+
+    <script>
+        const gtFilter = document.getElementById("gt-filter");
+        const yearFilter = document.getElementById("year-filter");
+
+        function applyFilters() {
+            const selectedGT = gtFilter.value;
+            const selectedYear = yearFilter.value;
+
+            document.querySelectorAll(".gt-section").forEach(section => {
+                const gt = section.dataset.gt;
+                let showSection = (selectedGT === "all" || gt === selectedGT);
+                
+                let yearBlocks = section.querySelectorAll(".year-block");
+                let hasVisibleBlock = false;
+
+                yearBlocks.forEach(block => {
+                    const year = block.dataset.year;
+                    const showBlock = (selectedYear === "all" || year === selectedYear);
+                    block.style.display = showBlock ? "" : "none";
+                    if (showBlock) hasVisibleBlock = true;
+                });
+
+                section.style.display = (showSection && hasVisibleBlock) ? "" : "none";
+            });
+        }
+
+        gtFilter.addEventListener("change", applyFilters);
+        yearFilter.addEventListener("change", applyFilters);
+    </script>
 </body>
 </html>

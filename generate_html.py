@@ -4,8 +4,8 @@ from datetime import datetime
 
 # Permet de générer l'ensemble des pages HTML travaux de chaque GT à partir du fichier JSON
 
-INPUT_JSON = "public/documents.json"
-OUTPUT_DIR = "public/html_pages"
+INPUT_JSON = "documents.json"
+OUTPUT_DIR = "html_pages"
 HTML_TEMPLATE = """<!doctype html>
 <html lang="fr-fr">
 <head>
@@ -173,31 +173,26 @@ HTML_TEMPLATE = """<!doctype html>
 </html>
 """
 
-def create_html_page(title, gt_number, files, output_path):
-    """ Génère une page HTML pour un groupe de travail donné. """
+def create_html_page(title, gt_number, gt_display, files, output_path):
     if not title or not gt_number:
         print(f"Erreur : title ou gt_number est invalide. title={title}, gt_number={gt_number}")
         return
 
-    # Regrouper les documents par année
     documents_by_year = {}
     for file in files:
         if isinstance(file, dict) and "date" in file:
             year = datetime.strptime(file["date"], "%Y-%m-%d").year
-            if year not in documents_by_year:
-                documents_by_year[year] = []
-            documents_by_year[year].append(file)
+            documents_by_year.setdefault(year, []).append(file)
 
-    # Générer les sections HTML pour chaque année
     document_items = []
     for year, docs in sorted(documents_by_year.items(), reverse=True):
         year_items = "\n".join(
             f"""
-            <div class="col-md-4 mb-4 d-flex">
-                <div class="card w-100">
-                    <a href="../{file.get('path', '#')}" target="_blank" style="text-decoration: none; color: inherit;">
-                        <div class="card-body">
-                            <h2 class="card-title">{file.get('title', 'Document inconnu')}</h2>
+            <div class=\"col-md-4 mb-4 d-flex\">
+                <div class=\"card w-100\">
+                    <a href=\"../{file.get('path', '#')}\" target=\"_blank\" style=\"text-decoration: none; color: inherit;\">
+                        <div class=\"card-body\">
+                            <h2 class=\"card-title\">{file.get('title', 'Document inconnu')}</h2>
                         </div>
                     </a>
                 </div>
@@ -206,88 +201,74 @@ def create_html_page(title, gt_number, files, output_path):
         )
         document_items.append(f"<div class='row'><h2>{year}</h2><hr>{year_items}</div>")
 
-    if not document_items:
-        print("Aucun document à afficher.")
-        document_items = "<p>Aucun document disponible.</p>"
-    else:
-        document_items = "\n".join(document_items)
+    html_content = HTML_TEMPLATE.format(title=title, gt_number=gt_number, gt_display=gt_display, documents_list="\n".join(document_items))
 
-    try:
-        html_content = HTML_TEMPLATE.format(title=title, gt_number=gt_number, documents_list=document_items)
-    except KeyError as e:
-        print(f"Erreur : Placeholder manquant dans HTML_TEMPLATE : {e}")
-        return
-
-    try:
-        with open(output_path, "w", encoding="utf-8") as file:
-            file.write(html_content)
-        print(f"Page HTML générée : {output_path}")
-    except IOError as e:
-        print(f"Erreur lors de l'écriture du fichier {output_path}: {e}")
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    with open(output_path, "w", encoding="utf-8") as file:
+        file.write(html_content)
+    print(f"Page HTML générée : {output_path}")
 
 def load_documents(input_json):
-    """ Charge les documents à partir du fichier JSON. """
     if not os.path.exists(input_json):
         print("Le fichier JSON n'existe pas. Exécute d'abord generate_json.py.")
         return None
 
-    try:
-        with open(input_json, "r", encoding="utf-8") as json_file:
-            return json.load(json_file)
-    except (IOError, json.JSONDecodeError) as e:
-        print(f"Erreur lors de la lecture du fichier JSON: {e}")
-        return None
+    with open(input_json, "r", encoding="utf-8") as json_file:
+        return json.load(json_file)
 
 def categorize_documents(documents):
-    """ Catégorise les documents par groupe de travail. """
     categories = {}
     for doc in documents:
         if "name" not in doc or "path" not in doc:
-            print(f"Document invalide: {doc}")
             continue
 
-        # Extraction du nom du document après GT*_DATE_
         parts = doc["name"].split("_")
         if len(parts) < 3:
             continue
+
         gt_prefix = parts[0]
         date_part = parts[1]
         doc_title = "_".join(parts[2:]).replace("_", " ")
 
-        # Ajout du titre au document
         doc["title"] = doc_title
 
-        # Ajout de la date au document si elle n'existe pas
         if "date" not in doc:
             try:
                 doc["date"] = datetime.strptime(date_part, "%Y-%m-%d").strftime("%Y-%m-%d")
             except ValueError:
-                doc["date"] = "2025-01-01"  # Date par défaut si le format est invalide
+                doc["date"] = "2025-01-01"
 
-        if gt_prefix not in categories:
-            categories[gt_prefix] = []
-        categories[gt_prefix].append(doc)
+        categories.setdefault(gt_prefix, []).append(doc)
 
-    # Tri des documents : d'abord par date (descendant), puis par titre alphabétique
     for gt_prefix in categories:
-        categories[gt_prefix].sort(key=lambda x: (datetime.strptime(x["date"], "%Y-%m-%d") if "date" in x else datetime.min, x["title"]), reverse=True)
+        categories[gt_prefix].sort(key=lambda x: (datetime.strptime(x["date"], "%Y-%m-%d"), x["title"]), reverse=True)
 
     return categories
 
 def generate_html_pages(input_json, output_dir):
-    """ Parse le JSON et génère des pages HTML par groupe de travail. """
     documents = load_documents(input_json)
     if documents is None:
         return
 
     categories = categorize_documents(documents)
 
-    os.makedirs(output_dir, exist_ok=True)
+    display_names = {
+        "GT1": "GT1 - Labellisation",
+        "GT2": "GT2 - Acquisition de données et transcription par ordinateur",
+        "GT3": "GT3 - Outils et pratiques éditoriales",
+        "GT4": "GT4 - Analyse automatique de texte",
+        "GT5": "GT5 - Métadonnées et modélisation de données",
+        "GT6": "GT6 - Open French Corpus",
+        "ethique": "Enjeux éthiques",
+        "juridique": "Questions juridiques"
+    }
 
     for gt, files in categories.items():
-        gt_number = gt.replace("GT", "")  # Extraction du numéro
+        gt_number = gt.replace("GT", "") if gt.startswith("GT") else gt
+        gt_display = display_names.get(gt, gt)
         output_path = os.path.join(output_dir, f"travaux_{gt}.html")
-        create_html_page(f"Travaux du {gt}", gt_number, files, output_path)
+        create_html_page(f"Travaux du {gt_display}", gt_number, gt_display, files, output_path)
 
 if __name__ == "__main__":
     generate_html_pages(INPUT_JSON, OUTPUT_DIR)
+

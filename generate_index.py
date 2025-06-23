@@ -4,7 +4,7 @@ from datetime import datetime
 from collections import defaultdict
 
 # Charger les documents depuis documents.json
-with open("public/documents.json", "r", encoding="utf-8") as f:
+with open("documents.json", "r", encoding="utf-8") as f:
     documents = json.load(f)
 
 # Organiser les documents par GT puis par année
@@ -13,8 +13,14 @@ all_gts = set()
 all_years = set()
 
 for doc in documents:
-    gt = doc["gt"]
-    date_str = doc["date"]
+    gt = doc.get("gt")
+    date_str = doc.get("date")
+    title = doc.get("title")
+    path = doc.get("path")
+
+    if not (gt and date_str and title and path):
+        continue
+
     try:
         date_obj = datetime.strptime(date_str, "%Y-%m-%d")
         if date_obj.year == 1:
@@ -25,7 +31,7 @@ for doc in documents:
 
     all_gts.add(gt)
     all_years.add(year)
-    gt_docs_by_year[gt][year].append(doc)
+    gt_docs_by_year[gt][year].append({"title": title, "path": path})
 
 for gt in gt_docs_by_year:
     for year in gt_docs_by_year[gt]:

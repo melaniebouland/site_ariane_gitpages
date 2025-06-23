@@ -1,0 +1,107 @@
+[
+    {
+        "name": "GT1_2023_Test.pdf",
+        "path": "travaux\\GT1_2023_Test.pdf",
+        "gt": "GT1",
+        "date": "2023-01-01",
+        "title": "Test"
+    },
+    {
+        "name": "GT2_2023_Test.pdf",
+        "path": "travaux\\GT2_2023_Test.pdf",
+        "gt": "GT2",
+        "date": "2023-01-01",
+        "title": "Test"
+    },
+    {
+        "name": "GT3_2023_Prog_journee_lancement.pdf",
+        "path": "travaux\\GT3_2023_Prog_journee_lancement.pdf",
+        "gt": "GT3",
+        "date": "2023-01-01",
+        "title": "Prog_journee_lancement"
+    },
+    {
+        "name": "GT3_2023_Scripts_CR.pdf",
+        "path": "travaux\\GT3_2023_Scripts_CR.pdf",
+        "gt": "GT3",
+        "date": "2023-01-01",
+        "title": "Scripts_CR"
+    },
+    {
+        "name": "GT3_2024-09-24_Reunion.pdf",
+        "path": "travaux\\GT3_2024-09-24_Reunion.pdf",
+        "gt": "GT3",
+        "date": "2024-09-24",
+        "title": "Reunion"
+    },
+    {
+        "name": "GT3_2024-09-26_LEX_Atelier.pdf",
+        "path": "travaux\\GT3_2024-09-26_LEX_Atelier.pdf",
+        "gt": "GT3",
+        "date": "2024-09-26",
+        "title": "LEX_Atelier"
+    },
+    {
+        "name": "GT3_2024_CR_Stage.pdf",
+        "path": "travaux\\GT3_2024_CR_Stage.pdf",
+        "gt": "GT3",
+        "date": "2024-01-01",
+        "title": "CR_Stage"
+    },
+    {
+        "name": "GT3_2024_LEX_CR_Atelier.pdf",
+        "path": "travaux\\GT3_2024_LEX_CR_Atelier.pdf",
+        "gt": "GT3",
+        "date": "2024-01-01",
+        "title": "LEX_CR_Atelier"
+    },
+    {
+        "name": "GT3_2024_Scripts_CR.pdf",
+        "path": "travaux\\GT3_2024_Scripts_CR.pdf",
+        "gt": "GT3",
+        "date": "2024-01-01",
+        "title": "Scripts_CR"
+    },
+    {
+        "name": "GT3_AC_NR_Lancement.pdf",
+        "path": "travaux\\GT3_AC_NR_Lancement.pdf",
+        "gt": "GT3",
+        "date": "0001-01-01",
+        "title": "NR_Lancement"
+    },
+    {
+        "name": "GT4_2023_Test.pdf",
+        "path": "travaux\\GT4_2023_Test.pdf",
+        "gt": "GT4",
+        "date": "2023-01-01",
+        "title": "Test"
+    },
+    {
+        "name": "GT5_2023_Test.pdf",
+        "path": "travaux\\GT5_2023_Test.pdf",
+        "gt": "GT5",
+        "date": "2023-01-01",
+        "title": "Test"
+    },
+    {
+        "name": "GT6_2023_Test.pdf",
+        "path": "travaux\\GT6_2023_Test.pdf",
+        "gt": "GT6",
+        "date": "2023-01-01",
+        "title": "Test"
+    },
+    {
+        "name": "juridique_2025_05_17_Exception_Enseignement_Recherche.pdf",
+        "path": "travaux\\juridique_2025_05_17_Exception_Enseignement_Recherche.pdf",
+        "gt": "juridique",
+        "date": "2025-01-01",
+        "title": "05_17_Exception_Enseignement_Recherche"
+    },
+    {
+        "name": "juridique_2025_05_17_Exception_Text_and_Data_Mining.pdf",
+        "path": "travaux\\juridique_2025_05_17_Exception_Text_and_Data_Mining.pdf",
+        "gt": "juridique",
+        "date": "2025-01-01",
+        "title": "05_17_Exception_Text_and_Data_Mining"
+    }
+]
