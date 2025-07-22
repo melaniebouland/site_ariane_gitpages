@@ -22,6 +22,15 @@ body {
     line-height: 1.5em;
     margin: 60px auto;
 }
+a {
+    text-decoration: none;
+    color: rgb(143 0 6);
+}
+
+a:hover {
+    color: rgb(100, 0, 4); /* Optionnel : une teinte un peu plus foncée au survol */
+}
+
 
 /* Nav */
 .nav-link {

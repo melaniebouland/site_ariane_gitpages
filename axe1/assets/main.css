@@ -22,6 +22,15 @@ body {
     line-height: 1.5em;
     margin: 60px auto;
 }
+a {
+    text-decoration: none;
+    color: rgb(143 0 6);
+}
+
+a:hover {
+    color: rgb(100, 0, 4); /* Optionnel : une teinte un peu plus foncée au survol */
+}
+
 
 /* Nav */
 .nav-link {
@@ -32,12 +41,8 @@ body {
     transition: border-color 0.3s ease; /* transition pour couleur surlignage  */
 }
 .nav-link:hover, .nav-link:focus {
-    border-bottom-color: #6c757d /* rouge surlignage /focus */;
+    border-bottom-color: #585252 /* rouge surlignage /focus */;
     color: rgb(143 0 6);
-}
-
-a:hover {
-    color: #6c757d !important;
 }
 /*CSS ATELIERS*/
 .shadow-box {
@@ -50,7 +55,7 @@ a:hover {
 }
 
 .shadow-box:hover {
-    box-shadow: 0 8px 16px #6c757d; /* Ombre plus intense au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus intense au survol */
 }
 
 .card-title {
@@ -100,7 +105,7 @@ a:hover {
 }
 
 .card:hover {
-    box-shadow: 0 4px 20px #6c757d;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar {
@@ -179,7 +184,6 @@ footer a {
   }
 footer a:hover {
     text-decoration: underline;
-    color: #6c757d;
 }
 footer .text-center {
     margin-right: 50px; /* Sépare davantage le paragraphe */

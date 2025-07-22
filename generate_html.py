@@ -4,8 +4,8 @@ from datetime import datetime
 
 # Permet de générer l'ensemble des pages HTML travaux de chaque GT à partir du fichier JSON
 
-INPUT_JSON = "documents.json"
-OUTPUT_DIR = "html_pages"
+INPUT_JSON = "public/documents.json"
+OUTPUT_DIR = "public/html_pages"
 HTML_TEMPLATE = """<!doctype html>
 <html lang="fr-fr">
 <head>
@@ -153,22 +153,19 @@ HTML_TEMPLATE = """<!doctype html>
     <!-- Footer -->
     <footer class="bg-light py-3">
         <div class="container d-flex justify-content-between align-items-center">
-          <div class="text-center flex-grow-1 me-5">
-            <p class="mb-0">&copy; 2024 Consortium HN Ariane. Tous droits réservés.</p>
-          </div>
-          <div class="ms-5">
-            <a href="https://consortiumariane.gitpages.huma-num.fr/axe1/credits.html" class="mx-2">Crédits</a>
-          </div>
-          <div class="ms-5">
-            <a href="https://consortiumariane.gitpages.huma-num.fr/axe1/mentions_legales.html" class="mx-2">Mentions légales</a>
-          </div>
-          <div class="ms-5">
-            <a href="https://hal.science/CONSORTIUM-HN-ARIANE" target="_blank" rel="noopener noreferrer">
-              <img src="assets/img/HAL_logotype-rvb_fond-clair_fr.png" class="img-fluid">
-            </a>
-          </div>
+            <div class="text-center flex-grow-1 me-5">
+                <p class="mb-0">&copy; 2024 Consortium HN Ariane. Tous droits réservés.</p>
+            </div>
+            <div class="ms-5">
+                <a href="https://consortiumariane.gitpages.huma-num.fr/axe1/credits.html" class="mx-2">Crédits</a>
+            </div>
+            <div class="ms-5">
+                <a href="https://hal.science/CONSORTIUM-HN-ARIANE" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/img/HAL_logotype-rvb_fond-clair_fr.png" class="img-fluid">
+                </a>
+            </div>
         </div>
-      </footer>
+    </footer>
 </body>
 </html>
 """
