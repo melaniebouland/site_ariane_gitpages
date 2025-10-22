@@ -3,6 +3,7 @@ import requests
 from ics import Calendar
 import json
 import re
+from datetime import datetime, timezone
 
 # URL du flux iCal public
 ICAL_URL = "https://calendar.google.com/calendar/ical/consortium.ariane%40gmail.com/public/basic.ics"
@@ -16,8 +17,10 @@ if response.status_code == 200:
     if not cal.events:
         print("⚠️ Aucun événement trouvé dans le calendrier.")
     
-    # Dictionnaire pour stocker les événements par Axe et GT
-    events_by_axe = {}
+    # Dictionnaire pour stocker les événements par catégorie (Axe, AMIS) et GT
+    events_by_category = {}
+    # Obtenir la date actuelle (naive, sans fuseau horaire)
+    today = datetime.now()
 
     # Parcourir les événements du calendrier
     for event in cal.events:
@@ -29,25 +32,60 @@ if response.status_code == 200:
         description = event.description.strip() if event.description else "Pas de description disponible"
         location = event.location.strip() if event.location else "Lieu non spécifié"
 
-        # Extraire l'Axe et le GT
+        # Extraire l'Axe, GT ou AMIS
         axe_match = re.search(r'AXE\s*(\d+)', title, re.IGNORECASE)
         gt_match = re.search(r'GT\s*(\d+)', title, re.IGNORECASE)
+        amis_match = re.search(r'AMIS', title, re.IGNORECASE)
+        
+        category = None
+        subcategory = None
         
         if axe_match:
-            axe = f"Axe {axe_match.group(1)}"
-            gt = f"GT {gt_match.group(1)}" if gt_match else "Autres GT"
+            category = f"Axe {axe_match.group(1)}"
+            subcategory = f"GT {gt_match.group(1)}" if gt_match else "Autres GT"
+        elif amis_match:
+            category = "AMIS"
+            subcategory = "Actualités AMIS"
 
-            events_by_axe.setdefault(axe, {}).setdefault(gt, {}).setdefault(year, []).append({
+        if category:
+            # Convertir la date en naive (sans fuseau horaire) pour la comparaison
+            event_datetime = start.datetime
+            if hasattr(event_datetime, 'tzinfo') and event_datetime.tzinfo is not None:
+                # Si la date a un fuseau horaire, on la convertit en naive
+                event_datetime = event_datetime.replace(tzinfo=None)
+            
+            events_by_category.setdefault(category, {}).setdefault(subcategory, {}).setdefault(year, []).append({
                 "title": title,
                 "start": formatted_start,
                 "date": formatted_date,
+                "datetime": event_datetime,  # Garder l'objet datetime pour le tri
                 "description": description,
                 "Localisation": location
             })
 
-    # Enregistrer les événements dans un fichier JSON
+    # Trier les événements par date (les plus récents/à venir en premier)
+    for category in events_by_category:
+        for subcategory in events_by_category[category]:
+            for year in events_by_category[category][subcategory]:
+                events_by_category[category][subcategory][year].sort(
+                    key=lambda x: x['datetime'],
+                    reverse=True
+                )
+
+    # Enregistrer les événements dans un fichier JSON (sans le datetime pour sérialisation)
+    events_for_json = {}
+    for category, subcats in events_by_category.items():
+        events_for_json[category] = {}
+        for subcat, years in subcats.items():
+            events_for_json[category][subcat] = {}
+            for year, events in years.items():
+                events_for_json[category][subcat][year] = [
+                    {k: v for k, v in event.items() if k != 'datetime'}
+                    for event in events
+                ]
+
     with open("public/calendrier.json", "w", encoding="utf-8") as json_file:
-        json.dump(events_by_axe, json_file, ensure_ascii=False, indent=4)
+        json.dump(events_for_json, json_file, ensure_ascii=False, indent=4)
 
     print("Les événements ont été enregistrés dans le fichier calendrier.json.")
 
@@ -55,9 +93,9 @@ if response.status_code == 200:
     output_dir = "public/calendrier_pages"
     os.makedirs(output_dir, exist_ok=True)
 
-    # Générer une page HTML pour chaque Axe
-    for axe, gts in events_by_axe.items():
-        safe_axe = re.sub(r'[^a-zA-Z0-9]+', '_', axe)
+    # Générer une page HTML pour chaque catégorie (Axe ou AMIS)
+    for category, subcats in events_by_category.items():
+        safe_category = re.sub(r'[^a-zA-Z0-9]+', '_', category)
         
         html_content = f"""<!doctype html>
 <html lang="fr-fr">
@@ -68,8 +106,8 @@ if response.status_code == 200:
     <link rel="icon" sizes="180x180" href="assets/img/logoAriane.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/main.css">
-    <title>Calendrier - {axe}</title>
+    <link rel="stylesheet" href="../assets/main.css">
+    <title>Calendrier - {category}</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         .dropdown:hover>.dropdown-menu {{
@@ -85,6 +123,12 @@ if response.status_code == 200:
             top: 0;
             left: 100%;
             margin-top: -1px;
+        }}
+        .event-upcoming {{
+            border-left: 4px solid rgb(143 0 6);
+        }}
+        .event-past {{
+            opacity: 0.7;
         }}
     </style>
 </head>
@@ -177,6 +221,7 @@ if response.status_code == 200:
                             <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/calendrier_pages/Axe_1.html">Axe 1</a></li>
                             <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/calendrier_pages/Axe_2.html">Axe 2</a></li>
                             <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/calendrier_pages/Axe_3.html">Axe 3</a></li>
+                            <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/calendrier_pages/AMIS.html">AMIS</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -186,43 +231,53 @@ if response.status_code == 200:
             </nav>
         </div>
     </header>
-    <h1 class="mt-4">{axe}</h1>
+    <div class="container">
+        <h1 class="mt-4">{category}</h1>
 """
 
-        for gt, years in sorted(gts.items()):
-            safe_gt = re.sub(r'[^a-zA-Z0-9]+', '_', gt)
-            html_content += f"<h2 class='mt-3'>{gt}</h2>"
+        for subcat, years in sorted(subcats.items()):
+            safe_subcat = re.sub(r'[^a-zA-Z0-9]+', '_', subcat)
+            html_content += f"<h2 class='mt-3'>{subcat}</h2>"
 
-            html_content += f"<ul class='nav nav-tabs' id='yearTabs-{safe_gt}' role='tablist'>"
-            for year in sorted(years.keys(), reverse=True):
-                active_class = "active" if year == max(years.keys()) else ""
+            html_content += f"<ul class='nav nav-tabs' id='yearTabs-{safe_subcat}' role='tablist'>"
+            sorted_years = sorted(years.keys(), reverse=True)
+            for idx, year in enumerate(sorted_years):
+                active_class = "active" if idx == 0 else ""
                 html_content += f"""
                 <li class='nav-item' role='presentation'>
-                    <button class='nav-link {active_class}' id='tab-{safe_gt}-{year}' data-bs-toggle='tab' data-bs-target='#content-{safe_gt}-{year}' type='button' role='tab'>
+                    <button class='nav-link {active_class}' id='tab-{safe_subcat}-{year}' data-bs-toggle='tab' data-bs-target='#content-{safe_subcat}-{year}' type='button' role='tab'>
                         {year}
                     </button>
                 </li>
                 """
             html_content += "</ul>"
 
-            html_content += f"<div class='tab-content mt-3' id='tabContent-{safe_gt}'>"
-            for year, events in sorted(years.items(), reverse=True):
-                active_class = "show active" if year == max(years.keys()) else ""
+            html_content += f"<div class='tab-content mt-3' id='tabContent-{safe_subcat}'>"
+            for idx, year in enumerate(sorted_years):
+                active_class = "show active" if idx == 0 else ""
+                events = years[year]
+                
                 html_content += f"""
-                <div class='tab-pane fade {active_class}' id='content-{safe_gt}-{year}' role='tabpanel'>
+                <div class='tab-pane fade {active_class}' id='content-{safe_subcat}-{year}' role='tabpanel'>
                 """
-                for index, event in enumerate(events):
+                
+                for event_idx, event in enumerate(events):
+                    # Déterminer si l'événement est à venir ou passé
+                    is_upcoming = event['datetime'] >= today
+                    card_class = "event-upcoming" if is_upcoming else "event-past"
+                    status_badge = '<span class="badge bg-success">À venir</span>' if is_upcoming else '<span class="badge bg-secondary">Passé</span>'
+                    
                     html_content += f"""
-                    <div class="card mb-3">
+                    <div class="card mb-3 {card_class}">
                         <div class="card-body">
-                            <h3 class="card-title">{event['title']}</h3>
+                            <h3 class="card-title">{event['title']} {status_badge}</h3>
                             <p><strong>Date :</strong> {event['date']}</p>
                             <p class="card-text"><strong>Horaire :</strong> {event['start']} - {event.get('end', 'Heure de fin non spécifiée')}</p>
                             <p class="card-text"><strong>Localisation :</strong> {event['Localisation']}</p>
-                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#desc{safe_gt}-{year}-{index}" aria-expanded="false">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#desc{safe_subcat}-{year}-{event_idx}" aria-expanded="false">
                                 Description
                             </button>
-                            <div class="collapse mt-2" id="desc{safe_gt}-{year}-{index}">
+                            <div class="collapse mt-2" id="desc{safe_subcat}-{year}-{event_idx}">
                                 <div class="card card-body">
                                     <p>{event['description']}</p>
                                 </div>
@@ -234,13 +289,14 @@ if response.status_code == 200:
             html_content += "</div>"
 
         html_content += """
+    </div>
 </body>
 </html>
 """
 
-        with open(f"{output_dir}/{safe_axe}.html", "w", encoding="utf-8") as html_file:
+        with open(f"{output_dir}/{safe_category}.html", "w", encoding="utf-8") as html_file:
             html_file.write(html_content)
 
-    print("Les pages HTML ont été générées avec filtrage par année pour chaque GT indépendamment.")
+    print("Les pages HTML ont été générées avec filtrage par année, tri par date et statut des événements.")
 else:
     print("❌ Impossible de récupérer le calendrier")

@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="fr-fr">
+<head>
+    <base href=".">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" sizes="180x180" href="assets/img/logoAriane.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/main.css">
+    <title>Calendrier - AMIS</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .dropdown:hover>.dropdown-menu {
+            display: block;
+        }
+        .dropdown-submenu {
+            position: relative;
+        }
+        .dropdown-submenu:hover>.dropdown-menu {
+            display: block;
+        }
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+        }
+        .event-upcoming {
+            border-left: 4px solid rgb(143 0 6);
+        }
+        .event-past {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header consortium -->
+    <header class="relative bg-white mb-2 w-100" style="box-shadow: 0 0 10px rgba(143, 0, 6, 0.1);">
+        <div class="border-top border-danger"></div>
+        <div class="header-content container">
+            <div class="header-logos d-flex align-items-center">
+                <!--Logo Ariane-->
+                <a href="https://cst-ariane.huma-num.fr/" class="me-2">
+                    <img src="assets/img/logoAriane.jpg" alt="CST-HN ARIANE logo">
+                </a>
+                <!--Logo Humanum-->
+                <a href="https://www.huma-num.fr/">
+                    <img src="assets/img/HN.png" alt="Huma-Num logo">
+                </a>
+            </div>
+            <!--Menu-->
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-gray-400 text-xl transition hover:text-gray-400/75 dropdown-toggle" href="#" id="axesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Axes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="axesDropdown">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="https://consortiumariane.gitpages.huma-num.fr/axe1">Axe 1</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT1/GT1.html">GT1 - Labellisation</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT2/GT2.html">GT2 - Acquisition de données et transcription par ordinateur</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT3/GT3.html">GT3 - Outils et pratiques éditoriales</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="https://consortiumariane.gitpages.huma-num.fr/axe2">Axe 2</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/GT4/GT4.html">GT4 - Analyse automatique de texte</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/GT5/GT5.html">GT5 - Métadonnées et modélisation de données</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/GT6/GT6.html">GT6 - Open French Corpus</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="https://consortiumariane.gitpages.huma-num.fr/axe3">Axe 3</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe3/ethique/ethique.html">Enjeux éthiques</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe3/juridique/juridique.html">Questions juridiques</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-gray-400 text-xl transition hover:text-gray-400/75 dropdown-toggle" href="#" id="axesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Travaux
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="axesDropdown">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle">Axe 1</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_GT1.html">GT1 - Labellisation</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_GT2.html">GT2 - Acquisition de données et transcription par ordinateur</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_GT3.html">GT3 - Outils et pratiques éditoriales</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle">Axe 2</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_GT4.html">GT4 - Analyse automatique de texte</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_GT5.html">GT5 - Métadonnées et modélisation de données</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_GT6.html">GT6 - Open French Corpus</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle">Axe 3</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_ethique.html">Enjeux éthiques</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_juridique.html">Questions juridiques</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-gray-400 text-xl transition hover:text-gray-400/75" href="https://consortiumariane.gitpages.huma-num.fr/outils/index.html">Outils</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-gray-400 text-xl transition hover:text-gray-400/75 dropdown-toggle" href="#" id="axesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Actualités
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="axesDropdown">
+                            <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/calendrier_pages/Axe_1.html">Axe 1</a></li>
+                            <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/calendrier_pages/Axe_2.html">Axe 2</a></li>
+                            <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/calendrier_pages/Axe_3.html">Axe 3</a></li>
+                            <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/calendrier_pages/AMIS.html">AMIS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-gray-400 text-xl transition hover:text-gray-400/75" href="https://docs.google.com/forms/d/1nxWiaj88LY7R-poxxlTiUxdvyIH5hL5eBHFjgsfsKGg/viewform?edit_requested=true">Nous rejoindre</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h1 class="mt-4">AMIS</h1>
+<h2 class='mt-3'>Actualités AMIS</h2><ul class='nav nav-tabs' id='yearTabs-Actualit_s_AMIS' role='tablist'>
+                <li class='nav-item' role='presentation'>
+                    <button class='nav-link active' id='tab-Actualit_s_AMIS-2025' data-bs-toggle='tab' data-bs-target='#content-Actualit_s_AMIS-2025' type='button' role='tab'>
+                        2025
+                    </button>
+                </li>
+                
+                <li class='nav-item' role='presentation'>
+                    <button class='nav-link ' id='tab-Actualit_s_AMIS-2024' data-bs-toggle='tab' data-bs-target='#content-Actualit_s_AMIS-2024' type='button' role='tab'>
+                        2024
+                    </button>
+                </li>
+                </ul><div class='tab-content mt-3' id='tabContent-Actualit_s_AMIS'>
+                <div class='tab-pane fade show active' id='content-Actualit_s_AMIS-2025' role='tabpanel'>
+                
+                    <div class="card mb-3 event-upcoming">
+                        <div class="card-body">
+                            <h3 class="card-title">AMIS. Working meeting for the European AMIS project <span class="badge bg-success">À venir</span></h3>
+                            <p><strong>Date :</strong> 11/12/2025</p>
+                            <p class="card-text"><strong>Horaire :</strong> 08:30 - Heure de fin non spécifiée</p>
+                            <p class="card-text"><strong>Localisation :</strong> zoom</p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#descActualit_s_AMIS-2025-0" aria-expanded="false">
+                                Description
+                            </button>
+                            <div class="collapse mt-2" id="descActualit_s_AMIS-2025-0">
+                                <div class="card card-body">
+                                    <p>Zoom link : <a href="https://us02web.zoom.us/j/89027418890?pwd=NVhRM042YW1xVHpwMHNnZTNyZ1UwQT09" target="_blank">https://us02web.zoom.us/j/89027418890?pwd=NVhRM042YW1xVHpwMHNnZTNyZ1UwQT09</a><br><p><strong><br></strong></p><p><strong>Meeting Agenda</strong></p><ul><li><p>Presentation by Ameni GUIZANI and Ala Eddine LAOUIR on the tests performed on the 4 types of files</p></li><li><p>Extraction of metadata from the files, followed by searching other databases to complete the metadata</p></li><li><p>Testing with an interface </p></li><li><p>Possibility of a public workshop at the end of January</p></li></ul></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-3 event-past">
+                        <div class="card-body">
+                            <h3 class="card-title">AMIS. Suite - Working meeting for the European AMIS project <span class="badge bg-secondary">Passé</span></h3>
+                            <p><strong>Date :</strong> 13/10/2025</p>
+                            <p class="card-text"><strong>Horaire :</strong> 08:30 - Heure de fin non spécifiée</p>
+                            <p class="card-text"><strong>Localisation :</strong> zoom</p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#descActualit_s_AMIS-2025-1" aria-expanded="false">
+                                Description
+                            </button>
+                            <div class="collapse mt-2" id="descActualit_s_AMIS-2025-1">
+                                <div class="card card-body">
+                                    <p>Zoom link : <a href="https://us02web.zoom.us/j/89027418890?pwd=NVhRM042YW1xVHpwMHNnZTNyZ1UwQT09" target="_blank">https://us02web.zoom.us/j/89027418890?pwd=NVhRM042YW1xVHpwMHNnZTNyZ1UwQT09</a><br><br><ul><li>Bilan de la réunion de travail organisée dans le cadre d'AMIS</li><li>Lien avec les activités du consortium</li><li>Organisation de la suite des travaux</li></ul></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-3 event-past">
+                        <div class="card-body">
+                            <h3 class="card-title">AMIS. Working meeting for the European AMIS project <span class="badge bg-secondary">Passé</span></h3>
+                            <p><strong>Date :</strong> 13/10/2025</p>
+                            <p class="card-text"><strong>Horaire :</strong> 07:00 - Heure de fin non spécifiée</p>
+                            <p class="card-text"><strong>Localisation :</strong> zoom</p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#descActualit_s_AMIS-2025-2" aria-expanded="false">
+                                Description
+                            </button>
+                            <div class="collapse mt-2" id="descActualit_s_AMIS-2025-2">
+                                <div class="card card-body">
+                                    <p>Zoom link : <a href="https://us02web.zoom.us/j/89027418890?pwd=NVhRM042YW1xVHpwMHNnZTNyZ1UwQT09" target="_blank">https://us02web.zoom.us/j/89027418890?pwd=NVhRM042YW1xVHpwMHNnZTNyZ1UwQT09</a><br><p><strong><br></strong></p><p><strong>Meeting Agenda</strong></p><ul><li><p>Presentation by Ameni GUIZANI on the development of AMIS service and web client modules</p></li><li><p>Presentation of the 3 case situations identified so far</p></li><li><p>Presentation by Ala Eddine LAOUIR on:</p><ul><li><p>Tests performed on the 4 types of files</p></li><li><p>Extraction of metadata from the files, followed by searching other databases to complete the metadata</p></li></ul></li><li><p>Discussion of next steps in the timeline:</p><ul><li><p>Request for files in November</p></li><li><p>Organization of testing with the interface in December</p></li><li><p>Possibility of a public workshop at the end of January</p></li></ul></li></ul></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-3 event-past">
+                        <div class="card-body">
+                            <h3 class="card-title">AMIS. Working meeting for the European AMIS project <span class="badge bg-secondary">Passé</span></h3>
+                            <p><strong>Date :</strong> 18/09/2025</p>
+                            <p class="card-text"><strong>Horaire :</strong> 09:00 - Heure de fin non spécifiée</p>
+                            <p class="card-text"><strong>Localisation :</strong> Lieu non spécifié</p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#descActualit_s_AMIS-2025-3" aria-expanded="false">
+                                Description
+                            </button>
+                            <div class="collapse mt-2" id="descActualit_s_AMIS-2025-3">
+                                <div class="card card-body">
+                                    <p>Zoom link : https://us02web.zoom.us/j/89027418890?pwd=NVhRM042YW1xVHpwMHNnZTNyZ1UwQT09
+
+CC128, à Nation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-3 event-past">
+                        <div class="card-body">
+                            <h3 class="card-title">AMIS. Working meeting for the European AMIS project <span class="badge bg-secondary">Passé</span></h3>
+                            <p><strong>Date :</strong> 01/07/2025</p>
+                            <p class="card-text"><strong>Horaire :</strong> 10:00 - Heure de fin non spécifiée</p>
+                            <p class="card-text"><strong>Localisation :</strong> Lieu non spécifié</p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#descActualit_s_AMIS-2025-4" aria-expanded="false">
+                                Description
+                            </button>
+                            <div class="collapse mt-2" id="descActualit_s_AMIS-2025-4">
+                                <div class="card card-body">
+                                    <p>Zoom link : <a href="https://www.google.com/url?q=https://us02web.zoom.us/j/89027418890?pwd%3DNVhRM042YW1xVHpwMHNnZTNyZ1UwQT09&amp;sa=D&amp;source=calendar&amp;usd=2&amp;usg=AOvVaw2R27MCV38sByxx7y576xDi" target="_blank">https://us02web.zoom.us/j/89027418890?pwd=NVhRM042YW1xVHpwMHNnZTNyZ1UwQT09</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-3 event-past">
+                        <div class="card-body">
+                            <h3 class="card-title">AMIS. Working meeting for the European AMIS project <span class="badge bg-secondary">Passé</span></h3>
+                            <p><strong>Date :</strong> 06/05/2025</p>
+                            <p class="card-text"><strong>Horaire :</strong> 11:00 - Heure de fin non spécifiée</p>
+                            <p class="card-text"><strong>Localisation :</strong> Lieu non spécifié</p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#descActualit_s_AMIS-2025-5" aria-expanded="false">
+                                Description
+                            </button>
+                            <div class="collapse mt-2" id="descActualit_s_AMIS-2025-5">
+                                <div class="card card-body">
+                                    <p>Zoom link : <a href="https://www.google.com/url?q=https://us02web.zoom.us/j/89027418890?pwd%3DNVhRM042YW1xVHpwMHNnZTNyZ1UwQT09&amp;sa=D&amp;source=calendar&amp;usd=2&amp;usg=AOvVaw2R27MCV38sByxx7y576xDi" target="_blank">https://us02web.zoom.us/j/89027418890?pwd=NVhRM042YW1xVHpwMHNnZTNyZ1UwQT09</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-3 event-past">
+                        <div class="card-body">
+                            <h3 class="card-title">AMIS. Working meeting for the European AMIS project <span class="badge bg-secondary">Passé</span></h3>
+                            <p><strong>Date :</strong> 08/04/2025</p>
+                            <p class="card-text"><strong>Horaire :</strong> 11:00 - Heure de fin non spécifiée</p>
+                            <p class="card-text"><strong>Localisation :</strong> Lieu non spécifié</p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#descActualit_s_AMIS-2025-6" aria-expanded="false">
+                                Description
+                            </button>
+                            <div class="collapse mt-2" id="descActualit_s_AMIS-2025-6">
+                                <div class="card card-body">
+                                    <p>Zoom link : <a href="https://us02web.zoom.us/j/89027418890?pwd=NVhRM042YW1xVHpwMHNnZTNyZ1UwQT09">https://us02web.zoom.us/j/89027418890?pwd=NVhRM042YW1xVHpwMHNnZTNyZ1UwQT09</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-3 event-past">
+                        <div class="card-body">
+                            <h3 class="card-title">AMIS. Working meeting for the European AMIS project <span class="badge bg-secondary">Passé</span></h3>
+                            <p><strong>Date :</strong> 21/01/2025</p>
+                            <p class="card-text"><strong>Horaire :</strong> 10:00 - Heure de fin non spécifiée</p>
+                            <p class="card-text"><strong>Localisation :</strong> Lieu non spécifié</p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#descActualit_s_AMIS-2025-7" aria-expanded="false">
+                                Description
+                            </button>
+                            <div class="collapse mt-2" id="descActualit_s_AMIS-2025-7">
+                                <div class="card card-body">
+                                    <p>Zoom
+
+Participer via Google Meet : https://meet.google.com/uif-pwvb-gxv
+
+Pour en savoir plus sur Meet : https://support.google.com/a/users/answer/9282720</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <div class='tab-pane fade ' id='content-Actualit_s_AMIS-2024' role='tabpanel'>
+                
+                    <div class="card mb-3 event-past">
+                        <div class="card-body">
+                            <h3 class="card-title">AMIS. Working meeting for the European AMIS project <span class="badge bg-secondary">Passé</span></h3>
+                            <p><strong>Date :</strong> 02/12/2024</p>
+                            <p class="card-text"><strong>Horaire :</strong> 08:00 - Heure de fin non spécifiée</p>
+                            <p class="card-text"><strong>Localisation :</strong> Lieu non spécifié</p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#descActualit_s_AMIS-2024-0" aria-expanded="false">
+                                Description
+                            </button>
+                            <div class="collapse mt-2" id="descActualit_s_AMIS-2024-0">
+                                <div class="card card-body">
+                                    <p>Zoom</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div></div>
+    </div>
+</body>
+</html>

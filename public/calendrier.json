@@ -1,0 +1,467 @@
+{
+    "Axe 1": {
+        "GT 3": {
+            "2024": [
+                {
+                    "title": "[REUNION] AXE 1 - GT3 : \"Identifiants (ARK/Handle) des concepts dans Open Theso\"",
+                    "start": "13:00",
+                    "date": "19/12/2024",
+                    "description": "Participer via Google Meet : https://meet.google.com/qid-pzfn-fbx\n\nPour en savoir plus sur Meet : https://support.google.com/a/users/answer/9282720",
+                    "Localisation": "visio"
+                },
+                {
+                    "title": "[REUNION DE TRAVAIL AXE 1 – GT3] – Atelier «Éditions numériques de textes antiques»",
+                    "start": "13:00",
+                    "date": "10/12/2024",
+                    "description": "<p><span>Réunion de travail des membres de l’atelier «Éditions numériques de textes antiques» du GT3</span></p><p>En ligne<span></span></p>",
+                    "Localisation": "VISIO"
+                },
+                {
+                    "title": "[FORMATION] AXE 1 - GT3 : TEI 1 - Niveau 1",
+                    "start": "00:00",
+                    "date": "24/10/2024",
+                    "description": "<header>                         <h1><a href=\"https://bvh.hypotheses.org/10617\">[Formation continue] Initiation à l’encodage XML-TEI des textes patrimoniaux (imprimés &amp; manuscrits) – 24, 25 &amp; 26 octobre 2024, CESR, Tours</a></h1><br><a href=\"https://bvh.hypotheses.org/10617\"><u>https://bvh.hypotheses.org/10617</u></a></header><br><p>L’équipe BVH du CESR organise avec le service de formation continue (FOCAL) de l’Université de Tours, une nouvelle session du stage d’« Initiation à l’encodage XML-TEI des textes patrimoniaux », à destination des professionnels.</p><p>Cette formation bénéficie du soutien du Consortium <a href=\"https://www.huma-num.fr/les-consortiums-hn/\" target=\"_blank\">ARIANE</a> (IR* Huma-Num) ainsi que celui de l’<a href=\"https://projet.biblissima.fr/fr\" target=\"_blank\">Equipex Biblissima+</a> (« Programme d’investissements d’avenir », ANR-21-ESRE-0005).</p><p>24, 25 &amp; 26 octobre 2024<br>CESR, Tours | Formation en présentiel (21h)<br><strong>[Les inscriptions sont ouvertes]</strong><br><a href=\"http://formation-continue.univ-tours.fr/offre-de-formation/initiation-a-l-encodage-xml-tei-des-textes-patrimoniaux-233975.kjsp\" target=\"_blank\">Inscriptions en ligne sur le site du FOCAL de l’Université de Tours</a></p><p>La TEI (<em>Text Encoding Initiative</em>) est une initiative universitaire pluridisciplinaire visant à uniformiser autant que possible le codage de documents en vue de leur échange, mais aussi de leur analyse.</p><p>Utilisée dans les milieux de la Recherche en Sciences humaines (linguistique, histoire, lettres, etc.), dans l’édition numérique et dans certaines bibliothèques, la TEI propose des solutions d’encodage XML pour les débutants comme pour les experts. Grâce à son système modulaire, elle s’adapte aux besoins spécifiques des projets pour éditer, diffuser, analyser, exploiter et visualiser les textes encodés. Les recommandations du <a href=\"https://tei-c.org/\" target=\"_blank\">TEI Consortium</a> proposent des solutions de codage spécifique pour les documents patrimoniaux, participant ainsi à leur valorisation.</p><p>Le CESR et l’équipe BVH de Tours organisent depuis 2005 cette formation dont le public ne cesse de s’élargir de par l’expansion des possibilités liées au numérique. Cette session annuelle est spécifiquement dédiée aux professionnels qui souhaitent s’initier et acquérir les compétences requises pour encoder, participer ou monter des projets de recherche et de valorisation des textes, qu’ils soient chercheurs, ingénieurs, ou issus de l’enseignement ou de bibliothèques patrimoniales.</p><h2><strong>PUBLIC</strong></h2><ul><li>Tout professionnel intéressé par la structuration XML de sources textuelles, ayant de bonnes connaissances d’un traitement de texte et des notions de HTML.</li><li>La formation privilégiera le dialogue et la complémentarité nécessaire entre professionnels techniques et scientifiques.</li><li>Les stagiaires travailleront sur des extraits de corpus choisis.</li></ul><h2><strong>OBJECTIFS</strong></h2><ul><li>Une initiation à la pratique de l’encodage en langage XML selon les recommandations de la TEI.</li><li>Une formation principalement appliquée au document patrimonial (imprimé et manuscrit). Les compétences acquises pourront s’étendre aux textes modernes.</li></ul><h2>I<strong>NTERVENANTS</strong></h2><ul><li>Lou Burnard (Consultant indépendant, Co-fondateur de la TEI)</li><li>Mathieu Duboc (Ingénieur indépendant)</li><li>Alexei Lavrentiev (Ingénieur de recherche, CNRS, IHRIM, UMR 5317, Lyon)</li></ul><h2><strong>PROGRAMME</strong></h2><p>La formation alternera théorie et travaux dirigés. Seront abordés :</p><ul><li>Des notions de base en XML</li><li>Une introduction générale à la TEI</li><li>Des aspects de méthodologie (structuration de documents, notion de schéma)</li><li>Les outils TEI (prise en main d’un éditeur XML, transformation de documents XML, panorama de la communauté TEI)</li><li>La structuration des textes et de leurs métadonnées</li><li>Des aspects spécifiques de l’encodage d’imprimés et de manuscrits de la Renaissance</li><li>Premières analyses de textes (citations, discours, entités nommées, etc.)</li></ul><p></p><p><strong>Pour les membres du consortium ARIANE</strong>, une prise en charge des frais de la formation est possible dans la limite du budget disponible : si vous souhaitez en bénéficier, contactez au préalable &lt;consortium.ariane@gmail.com&gt;.</p>",
+                    "Localisation": "Tours, France"
+                },
+                {
+                    "title": "[FORMATION] AXE 1 - GT3 : \"Edition structurée de corpus textuels\"",
+                    "start": "00:00",
+                    "date": "24/06/2024",
+                    "description": "<p>La plateforme Estrades en partenariat avec la Plateforme Humanités Numériques de la MISHA, le Lab de la BNU et le consortium ARIANE propose 3 journées de formation autour de l’édition structurée de corpus textuels, du 24 au 26 juin à Strasbourg.<br><br>Ces journées en 5 temps ont pour objectif d'explorer les principales étapes nécessaires à la production d’éditions structurées depuis l’acquisition semi-automatisée d’un texte jusqu’à sa mise en forme, en passant par son enrichissement et son analyse.<br><br>* Contenu : OCR/HTR avec escriptorium / HTML / XML-TEI / XSLT / XQuery<br><br>* Public :<br>- chercheur.euse.s, doctorant.e.s, ingénieur.e.s et étudiant.e.s.<br>- aucun niveau n’est demandé et les débutant.e.s sont les bienvenu.e.s, mais attendez vous quand même à faire des choses relativement techniques.<br><br>* Matériel : venir avec son propre ordinateur portable (sous Windows, MacOS ou Linux – les tablettes ou les machines fonctionnant sous Android comme les ChromeBook ne seront pas suffisantes ; indiquez nous si vous n'êtes pas équipé.e).<br><br>* Inscription <b>avant le 27 mai 2024</b> :<br>- <a href=\"https://sondagesv3.unistra.fr/index.php/718998\">https://sondagesv3.unistra.fr/index.php/718998</a><br>- pour des raisons pratiques, la formation est limitée à 15 personnes<br><br>* Frais :<br>- la formation est gratuite mais les repas du soir, déplacements et hébergements sont à la charge des participant.e.s<br>- un buffet sera proposé pour le 25 et 26 midi<br>- une prise en charge partielle est envisageable pour les membres du consortium ARIANE (nous contacter)<br><br>* Lieu : Lab de la BNU, 5 rue Joffre, 67000 Strasbourg<br><br>* Contact : estrades@misha.fr<br><br></p>",
+                    "Localisation": "5 Rue du Maréchal-Joffre, 67000 Strasbourg, France"
+                },
+                {
+                    "title": "[COLLOQUE] AXE 1 - GT3 : Colloque \"Lexicographie : nouveaux défis\"",
+                    "start": "00:00",
+                    "date": "20/06/2024",
+                    "description": "Pas de description disponible",
+                    "Localisation": "Cergy, France"
+                },
+                {
+                    "title": "[FORMATION] AXE 1 - GT3 : \"Ecole thématique « Analyser et Publier des corpus encodés en XML\" (ÉThAP 2024)",
+                    "start": "00:00",
+                    "date": "19/06/2024",
+                    "description": "<p>Les laboratoires <a href=\"http://ihrim.ens-lyon.fr/\">IHRIM</a>, <a href=\"https://ciham.msh-lse.fr/\">CIHAM</a>, <a href=\"https://www.hisoma.mom.fr/\">HiSoMA</a> et le consortium <a href=\"https://groupes.renater.fr/sympa/info/cst-ariane\">ARIANE</a> ont le plaisir de vous inviter à <strong>l'école thématique « Analyser et Publier des corpus encodés en XML » (ÉThAP 2024). Cette école sera consacrée à la manipulation des données textuelles encodées au format XML et au logiciel d'analyse textométrique TXM.</strong></p><p>Après une première journée de présentation des langages XPath, XSLT et XQuery, une formation approfondie à TXM aura lieu pendant deux jours.<br></p><p>La formation approfondie au logiciel BaseX et à la plateforme TEI Publisher est prévue pour l'édition 2025.</p><br><br><br><a href=\"https://ethap.sciencesconf.org/\">https://ethap.sciencesconf.org/</a>",
+                    "Localisation": "École Normale Supérieure de Lyon, site René Descartes, 15 parvis René Descartes, 69342 Lyon, France"
+                },
+                {
+                    "title": "[ REUNION DE TRAVAIL AXE 1 – GT3]",
+                    "start": "12:00",
+                    "date": "03/06/2024",
+                    "description": "Réunion de travail organisée par les membres du groupe de travail et ouverte à tous les membres du consortium ou intéressé(e)s par les travaux du GT3.",
+                    "Localisation": "en ligne"
+                },
+                {
+                    "title": "[FORMATION] AXE 1 - GT3 : TEI 2 - Niveau avancé",
+                    "start": "00:00",
+                    "date": "23/05/2024",
+                    "description": "<p>L’équipe « Bibliothèques Virtuelles Humanistes » (<a href=\"http://www.bvh.univ-tours.fr\">BVH</a>, <a href=\"https://cesr.univ-tours.fr\">CESR</a>, UMR 7323 du CNRS) organise pour la troisième fois en 2024, une formation « TEI 2 : encoder en XML-TEI » à destination des utilisateurs déjà familiers de ce langage.</p><p>Pendant deux jours, les formateurs proposeront plusieurs modules pratiques d'approfondissement des spécifications et de personnalisation de la TEI pour des modélisations complexes de documents. Les participants seront invités à soumettre des cas spécifiques et des interrogations relatives à leur corpus encodé. Le dernier module \"ouvert\" leur permettra ainsi de bénéficier de l’expertise des formateurs qui discuteront des solutions applicables et <i>TEI conformant</i>.</p><p>Cette formation est le fruit des efforts conjoints de chercheurs et d’institutions telles que le programme de recherche « Bibliothèques Virtuelles Humanistes » du CESR, le nouveau <a href=\"https://cst-ariane.huma-num.fr/\">consortium ARIANE</a> de l'IR* Huma-Num, la <a href=\"https://www.msh-vdl.fr/\">MSH Val de Loire</a> et le <a href=\"https://www.msh-reseau.fr/\">Réseau national des MSH</a>.</p><p>Cette troisième session (23-24 mai 2024) bénéficie du soutien du <a href=\"https://cst-ariane.huma-num.fr/\">Consortium ARIANE</a> ainsi que de celui de l'<a href=\"https://projet.biblissima.fr/fr\">Equipex Biblissima+</a> (<em>« Programme d’investissements d’avenir », ANR-21-ESRE-0005</em>). </p><p>Elle s’inscrit dans une action commune visant à encourager les chercheurs, les personnels des bibliothèques et des unités de recherche à s’approprier la TEI comme moyen d’édition et d’analyse des textes aussi bien pour des finalités scientifiques que de diffusion à l’intention du public plus large.</p><p> Toutes les informations concernant le programme sont accessibles en ligne : <a target=\"_blank\" href=\"https://formation-tei-2.sciencesconf.org/\">https://formation-tei-2.sciencesconf.org/</a></p>",
+                    "Localisation": "Tours, France"
+                }
+            ],
+            "2023": [
+                {
+                    "title": "[JOURNEE D'ETUDES] AXE 1 - GT3 : Outils et pratiques éditoriales",
+                    "start": "00:00",
+                    "date": "28/11/2023",
+                    "description": "<p><b>Informations pour l’agenda</b></p><p>[JOURNEE D'ETUDES] AXE 1 - GT3 : Outils et pratiques éditoriales</p><p>Date mardi, 28 nov. 2023</p><p>Lieu Aubervilliers, Campus Condorcet (<a href=\"https://maps.google.com/maps?hl=fr&amp;q=Cergy%2C%20France\">plan</a>)</p><p>Journée de lancement du GT3, Salle 3.06 de l’Humathèque, Campus Condorcet, et à distance</p>",
+                    "Localisation": "Cergy, France"
+                },
+                {
+                    "title": "[FORMATION] AXE 1 - GT3 : TEI 1 - Niveau 1",
+                    "start": "00:00",
+                    "date": "19/10/2023",
+                    "description": "<span><b>[Formation continue] Initiation à l’encodage  XML-TEI des textes patrimoniaux (imprimés &amp; manuscrits) – 19, 20 &amp; 21 octobre 2023 CESR, Tours</b></span><br><header>                <br>            <span>       </span></header><span>L’équipe BVH du CESR organise avec le SUFCO de l’Université de Tours, une nouvelle session du stage d’« initiation à l’encodage XML-TEI des textes patrimoniaux », à destination des professionnels.</span><br><p>Informations et inscriptions sur : <a href=\"https://bvh.hypotheses.org/9519\">https://bvh.hypotheses.org/9519</a><span> </span><br></p>",
+                    "Localisation": "Tours, France"
+                },
+                {
+                    "title": "[ATELIER THEMATIQUE] AXE 1 - GT3 : Editions numériques de qualité",
+                    "start": "08:00",
+                    "date": "26/09/2023",
+                    "description": "La première réunion de l’atelier thématique du GT3 dédié aux chaînes éditoriales (porté par Guillaume Porte et Ariane Pinche - tous deux en copie de ce message) se déroulera le <b>jeudi 26 octobre prochain à 10h</b> sur BBB (<a href=\"https://bbb.unistra.fr/b/gui-7ua-eup-2ly\">https://bbb.unistra.fr/b/gui-7ua-eup-2ly</a>).",
+                    "Localisation": "Visio"
+                },
+                {
+                    "title": "[ATELIER THEMATIQUE] AXE 1 - GT3 : Editions numériques de qualité",
+                    "start": "08:00",
+                    "date": "13/09/2023",
+                    "description": "Pas de description disponible",
+                    "Localisation": "Cergy, France"
+                },
+                {
+                    "title": "[REUNION DE TRAVAIL DES GT] AXE 1 - GT3 : Colloque \"Lexicographie : nouveaux défis\"",
+                    "start": "11:30",
+                    "date": "06/07/2023",
+                    "description": "Réunions de lancement du GT3 de l’Axe 1 : mercredi 5 juillet 13h-14h30, mercredi 5 juillet 17h30-19h et jeudi 6 13h30-15h.",
+                    "Localisation": "VISIO"
+                },
+                {
+                    "title": "[REUNION DE TRAVAIL DES GT] AXE 1 - GT3 : Colloque \"Lexicographie : nouveaux défis\"",
+                    "start": "15:30",
+                    "date": "05/07/2023",
+                    "description": "Réunions de lancement du GT3 de l’Axe 1 : mercredi 5 juillet 13h-14h30, mercredi 5 juillet 17h30-19h et jeudi 6 13h30-15h.",
+                    "Localisation": "VISIO"
+                },
+                {
+                    "title": "[REUNION DE TRAVAIL DES GT] AXE 1 - GT3 : Colloque \"Lexicographie : nouveaux défis\"",
+                    "start": "11:00",
+                    "date": "05/07/2023",
+                    "description": "Réunions de lancement du GT3 de l’Axe 1 : mercredi 5 juillet 13h-14h30, mercredi 5 juillet 17h30-19h et jeudi 6 13h30-15h.",
+                    "Localisation": "VISIO"
+                },
+                {
+                    "title": "[ECOLE THEMATIQUE ANNUELLE] AXE 1 - GT3 : Ecole thématique EThAP",
+                    "start": "00:00",
+                    "date": "30/05/2023",
+                    "description": "<a href=\"https://ethap.sciencesconf.org/\"></a><p><span><b><span>Ecole thématique EThAP</span></b></span></p><p><span><b><span> </span></b></span></p><p><span><b><span>Une nouvelle édition de l'école EThAP est programmée du 30 mai au 1er juin 2023. L'appel à candidature et les inscriptions seront bientôt disponibles sur ce site : <span><a href=\"https://ethap.sciencesconf.org/\">https://ethap.sciencesconf.org/</a> </span>.</span></b><br></span></p><p><span>Les laboratoires <a href=\"http://ihrim.ens-lyon.fr/\">IHRIM</a> et <a href=\"https://ciham.msh-lse.fr/\">CIHAM </a>et le consortium ARIANE ont le plaisir de vous inviter à <span><b>l'école thématique \"Analyser et Publier des corpus encodés en XML\" (ÉThAP 2023). Cette école sera consacrée à la manipulation des données textuelles encodées au format XML.</b></span></span></p><p><span>Après une introduction générale aux langages XPath, XSLT et XQuery, leur application à l’analyse et à la publication de corpus <span>sera mise en pratique</span> avec les logiciels TXM et BaseX.</span></p>",
+                    "Localisation": "Lieu non spécifié"
+                }
+            ],
+            "2025": [
+                {
+                    "title": "[REUNION] AXE 1 - GT3 : Demi-journée du groupe de travail \"Outils et pratiques éditoriales\"",
+                    "start": "13:00",
+                    "date": "14/11/2025",
+                    "description": "Pas de description disponible",
+                    "Localisation": "École Normale Supérieure de Lyon, site René Descartes, 15 parvis René Descartes, 69342 Lyon, France"
+                },
+                {
+                    "title": "[FORMATION] AXE 1 - GT3 : TEI 1 - Niveau 1",
+                    "start": "00:00",
+                    "date": "27/10/2025",
+                    "description": "<u></u>                         <h1><a href=\"https://bvh.hypotheses.org/10617\" target=\"_blank\">[Formation continue] Initiation à l’encodage XML-TEI des textes patrimoniaux (imprimés &amp; manuscrits) – 24, 25 &amp; 26 octobre 2025, CESR, Tours</a></h1><br>file:///C:/Users/User/Downloads/Formation_TEI_2025-1_Affiche.pdf <br><p>L’équipe BVH du CESR organise avec le service de formation continue (FOCAL) de l’Université de Tours, une nouvelle session du stage d’« Initiation à l’encodage XML-TEI des textes patrimoniaux », à destination des professionnels.</p><p>Cette formation bénéficie du soutien du Consortium <a href=\"https://www.huma-num.fr/les-consortiums-hn/\" target=\"_blank\">ARIANE</a> (IR* Huma-Num) ainsi que celui de l’<a href=\"https://projet.biblissima.fr/fr\" target=\"_blank\">Equipex Biblissima+</a> (« Programme d’investissements d’avenir », ANR-21-ESRE-0005).</p><p>25-27 octobre 2025<br>CESR, Tours | Formation en présentiel (21h)<br><strong>[Les inscriptions sont ouvertes]</strong><br><a href=\"http://formation-continue.univ-tours.fr/offre-de-formation/initiation-a-l-encodage-xml-tei-des-textes-patrimoniaux-233975.kjsp\" target=\"_blank\">Inscriptions en ligne sur le site du FOCAL de l’Université de Tours</a></p><p>La TEI (<em>Text Encoding Initiative</em>) est une initiative universitaire pluridisciplinaire visant à uniformiser autant que possible le codage de documents en vue de leur échange, mais aussi de leur analyse.</p><p>Utilisée dans les milieux de la Recherche en Sciences humaines (linguistique, histoire, lettres, etc.), dans l’édition numérique et dans certaines bibliothèques, la TEI propose des solutions d’encodage XML pour les débutants comme pour les experts. Grâce à son système modulaire, elle s’adapte aux besoins spécifiques des projets pour éditer, diffuser, analyser, exploiter et visualiser les textes encodés. Les recommandations du <a href=\"https://tei-c.org/\" target=\"_blank\">TEI Consortium</a> proposent des solutions de codage spécifique pour les documents patrimoniaux, participant ainsi à leur valorisation.</p><p>Le CESR et l’équipe BVH de Tours organisent depuis 2005 cette formation dont le public ne cesse de s’élargir de par l’expansion des possibilités liées au numérique. Cette session annuelle est spécifiquement dédiée aux professionnels qui souhaitent s’initier et acquérir les compétences requises pour encoder, participer ou monter des projets de recherche et de valorisation des textes, qu’ils soient chercheurs, ingénieurs, ou issus de l’enseignement ou de bibliothèques patrimoniales.</p><h2><strong>PUBLIC</strong></h2><ul><li>Tout professionnel intéressé par la structuration XML de sources textuelles, ayant de bonnes connaissances d’un traitement de texte et des notions de HTML.</li><li>La formation privilégiera le dialogue et la complémentarité nécessaire entre professionnels techniques et scientifiques.</li><li>Les stagiaires travailleront sur des extraits de corpus choisis.</li></ul><h2><strong>OBJECTIFS</strong></h2><ul><li>Une initiation à la pratique de l’encodage en langage XML selon les recommandations de la TEI.</li><li>Une formation principalement appliquée au document patrimonial (imprimé et manuscrit). Les compétences acquises pourront s’étendre aux textes modernes.</li></ul><h2>I<strong>NTERVENANTS</strong></h2><ul><li>Lou Burnard (Consultant indépendant, Co-fondateur de la TEI)</li><li>Mathieu Duboc (Ingénieur indépendant)</li><li>Alexei Lavrentiev (Ingénieur de recherche, CNRS, IHRIM, UMR 5317, Lyon)</li></ul><h2><strong>PROGRAMME</strong></h2><p>La formation alternera théorie et travaux dirigés. Seront abordés :</p><ul><li>Des notions de base en XML</li><li>Une introduction générale à la TEI</li><li>Des aspects de méthodologie (structuration de documents, notion de schéma)</li><li>Les outils TEI (prise en main d’un éditeur XML, transformation de documents XML, panorama de la communauté TEI)</li><li>La structuration des textes et de leurs métadonnées</li><li>Des aspects spécifiques de l’encodage d’imprimés et de manuscrits de la Renaissance</li><li>Premières analyses de textes (citations, discours, entités nommées, etc.)</li></ul><p></p><p><strong>Pour les membres du consortium ARIANE</strong>, une prise en charge des frais de la formation est possible dans la limite du budget disponible : si vous souhaitez en bénéficier, contactez au préalable &lt;<a href=\"mailto:consortium.ariane@gmail.com\" target=\"_blank\">consortium.ariane@gmail.com</a>&gt;.</p>",
+                    "Localisation": "Tours, France"
+                },
+                {
+                    "title": "[REUNION] AXE 1 - GT3 : Scripts - Install party",
+                    "start": "12:00",
+                    "date": "29/09/2025",
+                    "description": "Pas de description disponible",
+                    "Localisation": "Lieu non spécifié"
+                },
+                {
+                    "title": "[REUNION] AXE 1 - GT3 : Préparation Journées Ediscript Yourself",
+                    "start": "08:00",
+                    "date": "29/09/2025",
+                    "description": "Pas de description disponible",
+                    "Localisation": "Lieu non spécifié"
+                },
+                {
+                    "title": "[REUNION] AXE 1 - GT3 : Chaines éditoriales - point entretiens audio",
+                    "start": "08:00",
+                    "date": "25/09/2025",
+                    "description": "Pas de description disponible",
+                    "Localisation": "Lieu non spécifié"
+                },
+                {
+                    "title": "[PANEL & COLLOQUE] AXE 1 - GT3 - Colloque  -",
+                    "start": "00:00",
+                    "date": "26/06/2025",
+                    "description": "Académie des sciences, Lisbonne<br><a href=\"https://diachronie.org/2024/11/21/appel-a-contributions-15th-international-conference-on-historical-lexicography-and-lexicology-25-27-juin-lisbonne/\" target=\"_blank\">https://diachronie.org/2024/11/21/appel-a-contributions-15th-international-conference-on-historical-lexicography-and-lexicology-25-27-juin-lisbonne/</a><br><br><br><a href=\"https://ichll15.acad-ciencias.pt/index.php/conference/program\">https://ichll15.acad-ciencias.pt/index.php/conference/program</a>",
+                    "Localisation": "Lisbonne, Portugal"
+                },
+                {
+                    "title": "[FORMATION] AXE 1 - GT3 : \"Edition structurée de corpus textuels, du 24 au 27 juin à Strasbourg\"\"",
+                    "start": "00:00",
+                    "date": "25/06/2025",
+                    "description": "<p><b>[FORMATION] AXE 1 - GT3 : \"Edition structurée de corpus textuels, du 24 au 27 juin à Strasbourg\"\"</b></p><p><br></p><p>La plateforme Estrades en partenariat avec la Plateforme Humanités Numériques de la MISHA, le Lab de la BNU et le consortium ARIANE propose 3 journées de formation autour de l’édition structurée de corpus textuels, du 25 au 26 juin 2025 à Strasbourg.<br><br>Ces journées en 5 temps ont pour objectif d'explorer les principales étapes nécessaires à la production d’éditions structurées depuis l’acquisition semi-automatisée d’un texte jusqu’à sa mise en forme, en passant par son enrichissement et son analyse.<br><br>* Contenu : OCR/HTR avec escriptorium / HTML / XML-TEI / XSLT / XQuery<br><br>* Public :<br>- chercheur.euse.s, doctorant.e.s, ingénieur.e.s et étudiant.e.s.<br>- aucun niveau n’est demandé et les débutant.e.s sont les bienvenu.e.s, mais attendez vous quand même à faire des choses relativement techniques.<br><br>* Matériel : venir avec son propre ordinateur portable (sous Windows, MacOS ou Linux – les tablettes ou les machines fonctionnant sous Android comme les ChromeBook ne seront pas suffisantes ; indiquez nous si vous n'êtes pas équipé.e).<br><br>* Inscription <b>avant le 27 mai 2025</b> :<br>- <a target=\"_blank\" href=\"https://arche.unistra.fr/agenda/evenement/formation-a-ledition-numerique-2025\"><u>https://arche.unistra.fr/agenda/evenement/formation-a-ledition-numerique-2025</u></a> <br>- pour des raisons pratiques, la formation est limitée à 15 personnes<br><br>* Frais :<br>- la formation est gratuite mais les repas du soir, déplacements et hébergements sont à la charge des participant.e.s<br>- un buffet sera proposé pour le 25 et 26 midi<br>- une prise en charge partielle est envisageable pour les membres du consortium ARIANE (nous contacter)<br><br>* Lieu : Lab de la BNU, 5 rue Joffre, 67000 Strasbourg<br><br>* Contact : <a href=\"mailto:estrades@misha.fr\" target=\"_blank\">estrades@misha.fr</a><br><br></p>",
+                    "Localisation": "5 Rue du Maréchal-Joffre, 67000 Strasbourg, France"
+                }
+            ]
+        },
+        "GT 1": {
+            "2025": [
+                {
+                    "title": "[ATELIER THEMATIQUE] AXE 1 - GT1 - Atelier n°5 : \"Bien calibrer un projet en Humanités numériques\"",
+                    "start": "00:00",
+                    "date": "06/11/2025",
+                    "description": "<p>Chères et chers collègues.</p><p>Fort du succès rencontré par les porteurs de projets ANR depuis 2024, le groupe de travail GT1 du Consortium-HN ARIANE propose de reconduire l’atelier d’accompagnement au dépôt de projets de recherche pour 2026 : \"Bien calibrer un projet en Humanités Numériques\".</p><p>Lors de l’édition précédente, les participants ont bénéficié des conseils d’experts en gestion et évaluation de projets, ce qui leur a permis d’affiner certains aspects clés de leurs propositions. Leur succès a également été rendu possible grâce à une dynamique collective fondée sur le partage et la collaboration entre les participants. Forts de cette expérience, nous souhaitons renouveler l’initiative pour vous offrir des opportunités similaires.</p><p>L'atelier \"Bien calibrer un projet en Humanités Numériques\" s'adresse à ceux qui souhaitent :</p><ul><li>Maximiser leurs chances d’obtenir un financement, tout en apprenant à structurer leur projet pour en accroître la visibilité.</li><li>Se distinguer lors de l’évaluation et convaincre le financeur de la pertinence de leur projet.</li></ul><p>Bien que prioritairement destiné aux porteurs de projets ANR et aux membres du Consortium ARIANE, l'atelier est également ouvert à toutes celles et ceux qui soumettent des propositions dans le cadre d’autres types d'appels à projets.</p><p>Afin de garantir un accompagnement personnalisé efficace, le nombre de places est limité à 5 projets et 10 participants (2 par projet). La présence du porteur de projet (P.I.) est indispensable, il/elle pourra être accompagné(e) d’un membre de son équipe.</p><p>Des créneaux supplémentaires pourront être proposés en cas de liste d’attente.</p><p>L'atelier est gratuit, sur inscription.</p><p>Date limite d’inscription : vendredi 3 octobre 2025.<br>Date de l’atelier : jeudi 6 novembre 2025, de 9h30 à 16h30.<br>Lieu : Campus Condorcet, Aubervilliers, Salle 1.095, Bâtiment Recherche Nord</p><p><br></p><p><br></p>",
+                    "Localisation": "Campus Condorcet - Bâtiment de recherche Nord, Salle 1.095, 14 Cr des Humanités, 93300 Aubervilliers, France"
+                },
+                {
+                    "title": "[ATELIER THEMATIQUE] AXE 1 - GT1 - Atelier n°5 : \"Bien calibrer un projet en Humanités numériques\"",
+                    "start": "00:00",
+                    "date": "05/03/2025",
+                    "description": "<br>Chères et chers collègues.<br>Fort du succès rencontré par les porteurs de projets ANR en 2024, le groupe de travail GT1 du Consortium-HN ARIANE propose de reconduire l’atelier d’accompagnement au dépôt de projets de recherche pour 2025 : \"Bien calibrer un projet en Humanités Numériques\".<br>Lors de l’édition précédente, les participants ont bénéficié des conseils d’experts en gestion et évaluation de projets, ce qui leur a permis d’affiner certains aspects clés de leurs propositions. Leur succès a également été rendu possible grâce à une dynamique collective fondée sur le partage et la collaboration entre les participants. Forts de cette expérience, nous souhaitons renouveler l’initiative pour vous offrir des opportunités similaires.<br><br>L'atelier \"Bien calibrer un projet en Humanités Numériques\" s'adresse à ceux qui souhaitent :<ul><li>Maximiser leurs chances d’obtenir un financement, tout en apprenant à structurer leur projet pour en accroître la visibilité.</li><li>Se distinguer lors de l’évaluation et convaincre le financeur de la pertinence de leur projet.</li></ul><p>Bien que prioritairement destiné aux porteurs de projets ANR et aux membres du Consortium ARIANE, l'atelier est également ouvert à toutes celles et ceux qui soumettent des propositions dans le cadre d’autres types d'appels à projets.</p><p>Afin de garantir un accompagnement personnalisé efficace, le nombre de places est limité à 5 projets et 10 participants (2 par projet). La présence du porteur de projet (P.I.) est indispensable, il/elle pourra être accompagné(e) d’un membre de son équipe.</p><p>Des créneaux supplémentaires pourront être proposés en cas de liste d’attente.<br></p><br>L'atelier est gratuit, sur inscription : <a href=\"https://forms.gle/hvuU1KDLQqg9WS6SA\" target=\"_blank\">https://forms.gle/hvuU1KDLQqg9WS6SA</a><p>Date limite d’inscription : Vendredi 7 février 2025.<br>Date de l’atelier : mercredi 5 mars 2025, de 9h30 à 16h30.<br>Lieu : <span>Campus Condorcet - Bâtiment de recherche Nord, 14 Cr des Humanités, 93300 Aubervilliers, France</span></p><p><span>Salle 1.095 (Etage 1)</span></p>",
+                    "Localisation": "Campus Condorcet - Bâtiment de recherche Nord, 14 Cr des Humanités, 93300 Aubervilliers, France"
+                }
+            ],
+            "2024": [
+                {
+                    "title": "[ATELIER THEMATIQUE] AXE 1 - GT1 - Rencontre méthodologique  -",
+                    "start": "13:00",
+                    "date": "24/09/2024",
+                    "description": "<p>Les membres du groupe de travail « Outils et pratiques éditoriales » (Axe 1 – GT3) du Consortium-HN ARIANE vous invitent à la réunion de rentrée du groupe le <b>mardi 24 septembre, de 15h à 17h</b>, en visio. </p><p>Chaque atelier présentera le bilan des travaux accomplis ces derniers mois ; les missions effectuées par les trois stagiaires - Lucie Cordier, Amy Fall et Axel Renon - seront également présentées.</p><p>Le GT esquissera ses objectifs pour 2025.  </p><p>Nathalie Rousseau, Anaïs Chambat</p>",
+                    "Localisation": "En ligne"
+                },
+                {
+                    "title": "[ATELIER THEMATIQUE] AXE 1 - GT1 - Rencontre méthodologique  -",
+                    "start": "08:30",
+                    "date": "09/07/2024",
+                    "description": "<b>Réunion informelle du groupe de travail « Outils et pratiques éditoriales » </b><br><b>(Axe 1 – GT3) ARIANE</b><br><br><br>En ce début d’été,  le groupe de travail « Outils et pratiques éditoriales » (Axe 1 – GT3) du consortium Huma-Num ARIANE est heureux de vous donner quelques nouvelles des travaux du groupe.<br><p>Parallèlement au recensement de scripts auquel travaille activement l’atelier « Scripts de traitement de données » (animation : Jorge Fins), un recensement des outils en usage dans les éditions numériques de façon générale, et plus particulièrement (pour 2024) dans les éditions de textes antiques et de documents lexicographiques, est prévu dans les objectifs définis par le groupe de travail pour 2024.</p><p>Le Consortium a accueilli pour cet été trois stagiaires, Lucie Cordier, Amy Fall et Axel Renon, pour nous aider, entre autres missions, à effectuer ce recensement, notamment au moyen d’un questionnaire qui sera envoyé aux membres du consortium, mais qui sera aussi diffusé de façon plus large.</p><p>Nous vous convions à une réunion informelle portant sur le contenu de ce questionnaire, qui aura lieu mardi prochain 9 juillet par zoom de 10h30 à 12 heures. Vous êtes cordialement invités à y participer pour échanger avec Lucie, Amy et Axel. Merci d'avance de nous signaler votre présence si vous le pouvez :<br></p><p><a target=\"_blank\" href=\"https://evento.renater.fr/survey/recensement-des-outils-en-usage-dans-les-editions-numeriques-jo4dl1w5\">https://evento.renater.fr/survey/recensement-des-outils-en-usage-dans-les-editions-numeriques-jo4dl1w5</a></p><p>Par ailleurs, si vous ne pouvez pas être présents mardi prochain et que vous souhaitez contribuer d'une manière ou d'une autre à ce recensement, n'hésitez pas à nous le signaler également (au moyen du même Evento), toutes les bonnes volontés sont les bienvenues !</p><p><br></p><p>Très cordiales salutations,</p><p>  </p><p>Nathalie Rousseau, Anaïs Chambat</p>",
+                    "Localisation": "En ligne"
+                },
+                {
+                    "title": "[ATELIER THEMATIQUE] AXE 1 - GT1 - Rencontre méthodologique",
+                    "start": "00:00",
+                    "date": "04/04/2024",
+                    "description": "Dans le cadre de l’appel à projet de la région Bourgogne-Franche-Comté, le pôle « Arts et \nlittérature » du laboratoire ELLIADD a obtenu le financement pour amorcer la construction \nd’une bibliothèque poétique numérique. Lors de cette première phase du projet qui court \njusqu’à mai 2024, il s’agit de réfléchir à la méthodologie et aux procédures employées pour \nmener à bien un projet de génétique textuelle en humanités numériques (HN) et de \ncomprendre le processus créateur de trois poètes du XX° siècle (Jean Follain, André Frénaud \net Jean Grosjean). Cette rencontre du jeudi 4 avril a vocation à mettre en commun les \nexpériences de chercheurs, d’ingénieurs, d’archivistes ou de bibliothécaires en HN. Plusieurs \néléments peuvent être discutés :  \n1. Le corpus : lorsqu’un chercheur entreprend l’étude numérique d’une œuvre ou d’un \nauteur, il se heurte très rapidement à la question de la quantité de matière qu’il doit \nsélectionner. Trop peu rendrait son étude peu significative et caduque, trop la rend \nimpossible à mener. La question de la quantité impose donc des choix qui doivent être \nréfléchis pour faire sens. La constitution du corpus ne résulte pas de décisions \nstrictement matérielles et pratiques, elle est avant tout scientifique.  \n2. Les outils : \na. de transcription : porter un projet en HN est jalonné de différentes étapes qui \nnécessitent toutes une réflexion conjointe avec les informaticiens (chercheurs \nou ingénieurs). Préférer e-scriptorium ou Transkribus se justifie selon les \nfonctionnalités des logiciels et les exports que l’on souhaite opérer.  \nb. de visualisation : montrer les différents états d’un même poème ou les notes \npréparatoires à une page de roman impose des imbrications que l’outil de \nvisualisation doit rendre fluides. Pouvoir aller du document princeps à la \ntranscription normalisée ou circuler d’un manuscrit à un autre font partie des \nprérogatives à la réflexion sur l’arborescence et la structuration de la \nvisualisation.  \n\n\nc. d’exploitation : de nombreux outils existent. Chaque porteur peut être tenté \nde vouloir un outil propre à son projet pour être sûr d’y développer les \nfonctionnalités qui lui permettront d’exploiter son fonds et son corpus comme \nil le souhaite. Par ailleurs, imaginer une plateforme qui embrasserait tous les \npossibles semble illusoire. Comment s’approprier l’existant pour le \nperfectionner et le faire évoluer est une question majeure. \n3. Les procédures et l’interopérabilité : sortir son projet en HN de l’artisanat passe par \nl’élaboration de procédures duplicables à d’autres projets. De même, veiller à ne pas \nenfermer son corpus dans un projet est une gageure pour les recherches suivantes.  \n\n \n\n \n\nL’objectif de cette journée est de mettre en commun et de confronter l’expérience de \nchercheurs et de personnels engagés dans des projets en humanités numériques. Les \ninterventions se feront sous la forme de communications et/ou de tables rondes. Il ne s’agit \npas tant de présenter des résultats de recherche sur une œuvre ou un corpus, mais bien plutôt \nde réfléchir collectivement à l’évolution et l’élaboration des projets. Le temps de la discussion \nsera privilégié. \n\n \n\n \n\nVos propositions sont à envoyer conjointement à marianne.froye@univ-fcomte.fr, à \nelodie.bouygues@univ-fcomte.fr et à augustin-guillot@laposte.net avant le 31/12/2023. \n\n \n\n \n\nCette journée est financée par la région Bourgogne Franche-Comté dans le cadre du projet \nAmorçage « Corpus Poétiques Numériques » (CPN), par le consortium Ariane de la TGIR Huma-\nNum, par la MSHE C-N. Ledoux et par le laboratoire ELLIADD.",
+                    "Localisation": "En ligne"
+                },
+                {
+                    "title": "[ATELIER THEMATIQUE] AXE 1 - GT1 - Atelier n°5 : \"Bien calibrer un projet en Humanités numériques\"",
+                    "start": "00:00",
+                    "date": "05/03/2024",
+                    "description": "Réunion de travail (en présentiel) dédiée à la réponse à l'appel ANR2024 (phase 2)",
+                    "Localisation": "Paris ou Lyon"
+                },
+                {
+                    "title": "[ATELIER THEMATIQUE] AXE 1 - GT1 - Atelier n°4 : \"Bien calibrer un projet en Humanités numériques\"",
+                    "start": "12:00",
+                    "date": "19/02/2024",
+                    "description": "Pas de description disponible",
+                    "Localisation": "En ligne"
+                }
+            ],
+            "2023": [
+                {
+                    "title": "[ATELIER THEMATIQUE] AXE 1 - GT1 - Atelier n°3 : \"Bien calibrer un projet en Humanités numériques\"",
+                    "start": "13:30",
+                    "date": "30/11/2023",
+                    "description": "Pas de description disponible",
+                    "Localisation": "En ligne"
+                },
+                {
+                    "title": "[ATELIER THEMATIQUE] AXE 1 - GT1 - Atelier n°2 : \"Bien calibrer un projet en Humanités numériques\"",
+                    "start": "12:00",
+                    "date": "16/10/2023",
+                    "description": "Pas de description disponible",
+                    "Localisation": "En ligne"
+                },
+                {
+                    "title": "[ATELIER THEMATIQUE] AXE 1 - GT1 - Atelier n°1 : \"Bien calibrer un projet en Humanités numériques\"",
+                    "start": "12:00",
+                    "date": "20/09/2023",
+                    "description": "Pas de description disponible",
+                    "Localisation": "En ligne"
+                },
+                {
+                    "title": "[FORMATION FAIR-LINE] AXE 1 - GT1 : Import par lot dans Nakalaskribus",
+                    "start": "08:00",
+                    "date": "20/09/2023",
+                    "description": "<p><b>Objectif</b><span> : import par lot dans        NAKALA via l'outil MyNkl (</span><a href=\"https://mynkl.huma-num.fr\">https://mynkl.huma-num.fr</a><span>)</span><br></p>    <p><a href=\"https://mynkl.huma-num.fr/\"><span>Mynkl</span></a><span> est une interface en ligne        facilitant les dépôts par lots dans Nakala. </span><a href=\"https://nakala.fr/\"><span>Nakala</span></a><span> est un entrepôt de données        de recherche pour les Sciences Humaines et Sociales, maintenu        par l'Infrastructure de Recherche </span><a href=\"https://www.huma-num.fr/\"><span>Huma-Num</span></a><span>. L'utilisation de Nakala        permet de s'inscrire dans une démarche FAIR (publier des données        faciles à trouver, accessibles, interopérables et        réutilisables.)</span></p>    <p><span>Avec Mynkl, il est possible        d'importer en quelques clics les données à publier et leurs        métadonnées obligatoires, stockées dans un simple fichier CSV.        Mynkl propose également un environnement de gestion des données.        On peut ainsi modifier facilement leur statut (public/privé),        l'association à des collections ou encore ajouter/supprimer des        métadonnées non obligatoires.</span></p>    <p><span>Voir la vidéo de        démonstration<br>      </span><a href=\"https://twitter.com/fatihaidmhand/status/1572956483872235520?s=20\"><span>https://twitter.com/fatihaidmhand/status/1572956483872235520?s=20</span></a></p>    <p><b><span>Programme</span></b></p>    <ul><li><span>présentation courte de          l'outil par la développeuse Lélia Elbourani Alcaraz <br></span></li><li><span>manipulation avec ses          données dans NAKALA test : les stagiaires travailleront sur          leur propre ordinateur portable avec leurs données. Le café et          les croissants sont fournis.</span></li></ul>    <p><br></p>",
+                    "Localisation": "École Normale Supérieure de Lyon, site René Descartes, 15 parvis René Descartes, 69342 Lyon, France"
+                },
+                {
+                    "title": "[FORMATION FAIR-LINE] AXE 1 - GT1 : Petit-déj FAIR - atelier import par lot dans Nakalaskribus",
+                    "start": "07:30",
+                    "date": "25/04/2023",
+                    "description": "<p><span>L'</span><a href=\"https://ahnenslyon.hypotheses.org/\"><span>Atelier des Humanités          Numériques</span></a><span> de l'ENS de Lyon et les        consortiums </span><a href=\"https://cahier.hypotheses.org/\"><span>ARIANE</span></a><span> et </span><a href=\"https://distam.hypotheses.org/\"><span>DISTAM</span></a><span> s’associent pour organiser        un petit-déjeuner FAIR en présentiel le <b>mardi 25 avril 2023          de 9h30 à 11h30</b>.<br>        En complément des FAIRline en ligne du consortium ARIANE, cet atelier permettra aux participant.e.s de        manipuler et d'importer en lot leurs propres données.</span></p>    <p><b><span>Objectif</span></b><span> : import par lot dans        NAKALA via l'outil MyNkl (</span><a href=\"https://mynkl.huma-num.fr\"><span>https://mynkl.huma-num.fr</span></a><span>)</span></p>    <p><a href=\"https://mynkl.huma-num.fr/\"><span>Mynkl</span></a><span> est une interface en ligne        facilitant les dépôts par lots dans Nakala. </span><a href=\"https://nakala.fr/\"><span>Nakala</span></a><span> est un entrepôt de données        de recherche pour les Sciences Humaines et Sociales, maintenu        par l'Infrastructure de Recherche </span><a href=\"https://www.huma-num.fr/\"><span>Huma-Num</span></a><span>. L'utilisation de Nakala        permet de s'inscrire dans une démarche FAIR (publier des données        faciles à trouver, accessibles, interopérables et        réutilisables.)</span></p>    <p><span>Avec Mynkl, il est possible        d'importer en quelques clics les données à publier et leurs        métadonnées obligatoires, stockées dans un simple fichier CSV.        Mynkl propose également un environnement de gestion des données.        On peut ainsi modifier facilement leur statut (public/privé),        l'association à des collections ou encore ajouter/supprimer des        métadonnées non obligatoires.</span></p>    <p><span>Voir la vidéo de        démonstration<br>      </span><a href=\"https://twitter.com/fatihaidmhand/status/1572956483872235520?s=20\"><span>https://twitter.com/fatihaidmhand/status/1572956483872235520?s=20</span></a></p>    <p><b><span>Programme</span></b></p>    <ul><li><span>présentation courte de          l'outil par la développeuse Lélia Elbourani Alcaraz <br></span></li><li><span>manipulation avec ses          données dans NAKALA test : les stagiaires travailleront sur          leur propre ordinateur portable avec leurs données. Le café et          les croissants sont fournis.</span></li></ul>    <p><b><span>Lieu</span></b><span> : ENS de Lyon – site        Descartes – Bâtiment Buisson – salle D8 006</span></p>    <p><b><span>Renseignements et          inscriptions</span></b></p>    <ul><li><a href=\"mailto:estelle.senna@ens-lyon.fr\"><span>estelle.senna@ens-lyon.fr</span></a></li><li><a href=\"mailto:nathalie.arlin@ens-lyon.fr\"><span>nathalie.arlin@ens-lyon.fr</span></a></li><li><a href=\"mailto:alain.marois@univ-lyon2.fr\"><span>alain.marois@univ-lyon2.fr</span></a></li></ul>    <p><span>Places limitées à 15        personnes</span></p>",
+                    "Localisation": "École Normale Supérieure de Lyon, site René Descartes, 15 parvis René Descartes, 69342 Lyon, France"
+                }
+            ]
+        },
+        "GT 2": {
+            "2023": [
+                {
+                    "title": "[FORMATION] AXE 1 - GT2 : Formation à Transkribus",
+                    "start": "00:00",
+                    "date": "26/04/2023",
+                    "description": "<br>Formation aux outils de numérisation, de transcription et d'encodage des sources manuscrites ou tapuscrites à l'aide du logiciel d'OCR/HTR Transkribus et e-Scriptorium<br><br><b><span>Programme de la formation :</span></b><br> <p><span>** le <span><span><span>26 avril 2023</span></span></span> de 14h à 17h : Introduction théorique, \"Du manuscrit à la base de données\". Présentation générale de l'interface de Transkribus.</span></p><p><span>** le <span><span><span>27 avril 2023</span></span></span> de 10h à 12h : Import et analyse d'images, création de corpus, analyse et entraînement de modèles d'HTR/OCR, correction de la transcription automatique.</span></p><p><span>**le <span><span><span>27 avril 2023</span></span></span> de 14h à 15h30 : Formats d'exports, transformations, visualisation et analyses de résultats. Mots conclusifs.</span></p><p><span>**le <span><span><span>27 avril 2023</span></span></span> de 15h30 à 17h : présentation générale de l'interface de E-SCRIPTORIUM et manipulation (si possible, pas en accès libre).</span></p> <br><br>La formation se déroule<span> </span> à Poitiers, à l'UFR Lettres et Langues, bâtiment A3,  1 rue Raymond Cantel - 11102 - 86073 Poitiers Cedex 9 ; dans les salles C117 et C216 (couloir C, premier et deuxième étages).<br> <br>Le nombre de places est limité. <span><span><span><span><span><span>Pour vous inscrire : </span></span></span></span></span></span><br><span><span><span><span><span><span></span></span></span></span></span></span><ul><li> Les<span> enseignants-chercheurs</span>, chercheur et IR doivent valider leur inscription via<span> FormUP </span>(moins de 1 minute) <span><span><span><a href=\"https://formup.appli.univ-poitiers.fr/for_preinscriptions/etape1\">https://formup.appli.univ-poitiers.fr/for_preinscriptions/etape1</a></span></span></span> , formation <span>numéro 1034</span>,</li><li>Les <span>chercheurs associés</span> doivent contacter directement Mme Agnès Lemmer via son adresse<span> <span><span><span><a href=\"mailto:agnes.lemmer@univ-poitiers.fr\">agnes.lemmer@univ-poitiers.fr</a></span></span></span> </span>pour qu'elle les inscrive directement à la formation, </li><li><span><span><span><span><span><span><span><span>Les</span><span> </span><span>doctorants/Masters</span><span> doivent </span><span>s'inscrire via le lien suivant : </span><span><span><span><a href=\"https://docs.google.com/spreadsheets/d/15EuCngrDHZBMtbEiUjbhcmG2zQdKy6uBHFU3Xqa3k6s/edit?usp=sharing\"><span>https://docs.google.com/spreadsheets/d/1oRu-dmkbI7ZY5LDenkMXQcGbJdGPCOTUrH8Qjp-P6VY/edit?usp=sharing</span></a></span></span></span><span> </span><span>(copier/coller sur internet)</span></span></span></span></span></span></span></span></li></ul>",
+                    "Localisation": "Lieu non spécifié"
+                }
+            ]
+        }
+    },
+    "Axe 2": {
+        "GT 5": {
+            "2025": [
+                {
+                    "title": "[COLLOQUE] AXE 2 - GT5 : Présentation du projet AMIS au  VII Congreso de la Sociedad Internacional de HUMANIDADES DIGITALES HISPÁNICAS",
+                    "start": "00:00",
+                    "date": "22/10/2025",
+                    "description": "<a href=\"https://hdh2025.uv.es/\">https://hdh2025.uv.es/</a><br><br><section>            <br>                <br>                    <br>                        <br>                            <br>                                <h2>Compromiso cívico y social de                                    las Humanidades Digitales</h2>                                                                                                        <br>                    <br>                        <br>                            <br>                                <p>                                    Desde el Departamento de Filología Española, el Departamento de Filología Inglesa y Alemana y el Departamento de Historia del Arte de la Universitat de València, con el apoyo del Vicerrectorado de Cultura y Sociedad, tenemos el placer de invitarles a participar en el Congreso Internacional de la Sociedad Internacional de Humanidades Digitales Hispánicas, que se celebrará en Valencia del <b>22 al 24 de octubre de 2025</b>.                                </p>                                <p>Inspiradas e inspirados por las palabras que recogen el pensamiento del ilustre humanista y filósofo Joan Lluís Vives, asumimos la necesidad que tienen las artes y humanidades no solo de 'conocer' y reflexionar desde una perspectiva teórica y epistemológica sobre la tecnología, sino también de 'actuar' sobre los desarrollos técnicos, así como de convertirse en agentes 'productores' de una tecnología que ejerce un poder transformador sobre lo humano.</p>                                <p>Partimos del convencimiento de que las humanidades pueden dialogar con las tecnologías contemporáneas, fusionando la observación empírica con el análisis crítico y creativo.</p>                                 </section>",
+                    "Localisation": "Valence, Province de Valence, Espagne"
+                },
+                {
+                    "title": "[ATELIER THEMATIQUE] AXE 2 - GT5 : Métadonnées",
+                    "start": "11:00",
+                    "date": "26/03/2025",
+                    "description": "Retour et finalisation du livrable Recensement \"scneari\"",
+                    "Localisation": "Visio"
+                },
+                {
+                    "title": "[ATELIER THEMATIQUE] AXE 2 - GT5 : Métadonnées",
+                    "start": "12:30",
+                    "date": "18/02/2025",
+                    "description": "Pour participer à cet atelier, renseignez le formulaire suivant :<a href=\"https://forms.gle/N7Lemr4kW1YXnbG26\">https://forms.gle/N7Lemr4kW1YXnbG26</a>",
+                    "Localisation": "Visio et Lyon"
+                }
+            ],
+            "2023": [
+                {
+                    "title": "[ATELIER THEMATIQUE] AXE 2 - GT5 : Métadonnées",
+                    "start": "12:00",
+                    "date": "13/09/2023",
+                    "description": "La réunion se déroulera salle Claude Simon, Maison de la Recherche Sorbonne Nouvelle, 4, rue des Irlandais, 75004 Paris",
+                    "Localisation": "Paris et en ligne"
+                }
+            ],
+            "2024": [
+                {
+                    "title": "[ATELIER THEMATIQUE] AXE 2 - GT5 : Métadonnées",
+                    "start": "09:00",
+                    "date": "06/06/2024",
+                    "description": "Réunion de travail n°2 du GT.\nVisioconférence. Le lien sera envoyé la veille de l'atelier.",
+                    "Localisation": "Lieu non spécifié"
+                }
+            ]
+        },
+        "GT 4": {
+            "2024": [
+                {
+                    "title": "[ATELIER THEMATIQUE] AXE 2 - GT4 : Franco Moretti",
+                    "start": "07:30",
+                    "date": "22/05/2024",
+                    "description": "Atelier réservé aux invités. <br><b>Salle </b><b>A524</b><b>, Campus Nation</b>",
+                    "Localisation": "En ligne et à Paris"
+                },
+                {
+                    "title": "[ATELIER THEMATIQUE] AXE 2 - GT4 : Franco Moretti",
+                    "start": "08:30",
+                    "date": "24/01/2024",
+                    "description": "Atelier réservé aux invités. <br><b>Salle </b><b>A524</b><b>, Campus Nation</b>",
+                    "Localisation": "En ligne et à Paris"
+                },
+                {
+                    "title": "[CONFERENCE] AXE 2 - GT4 : Conférence de Franco Moretti",
+                    "start": "13:00",
+                    "date": "23/01/2024",
+                    "description": "<b>Salle A608, Campus Nation, Sorbonne Nouvelle</b>",
+                    "Localisation": "En ligne et à Paris"
+                }
+            ],
+            "2025": [
+                {
+                    "title": "AXE 2 - GT4 : \"Le traitement automatique des textes : méthodes et concepts\"",
+                    "start": "12:00",
+                    "date": "07/10/2025",
+                    "description": "Salle du Conseil, Maison de la Recherche, 4 rue des irlandais",
+                    "Localisation": "Maison de la Recherche - Sorbonne Université, 28 Rue Serpente, 75006 Paris, France"
+                },
+                {
+                    "title": "AXE 2 - GT4 : \"Le traitement automatique des textes : méthodes et concepts\"",
+                    "start": "12:00",
+                    "date": "17/06/2025",
+                    "description": "Sorbonne Universités, Rue Serpente, à Paris",
+                    "Localisation": "visio"
+                },
+                {
+                    "title": "AXE 2 - GT4 : \"Le traitement automatique des textes : méthodes et concepts\"",
+                    "start": "13:30",
+                    "date": "21/01/2025",
+                    "description": "Pas de description disponible",
+                    "Localisation": "visio"
+                }
+            ],
+            "2023": [
+                {
+                    "title": "[ATELIER THEMATIQUE] AXE 2 - GT4 : \" Workshop on AI and Large Language Models (LLMs) for the Analysis of Large Literary Corpora\"",
+                    "start": "00:00",
+                    "date": "05/12/2023",
+                    "description": "<br><table><tbody><tr><td><h1>Workshop on AI and Large Language Models (LLMs) for the Analysis of Large Literary Corpora</h1><h3>December 5, 2023</h3><br><a href=\"https://workshop-llms4cls.github.io/\">Workshop LLMs 4 CLS (workshop-llms4cls.github.io)</a><table><tbody><tr><td><h1>Venue</h1><p>The workshop will take place at the Ecole Normale Supérieure, in salle Dussane, 45 rue d'Ulm, 75005 Paris, France.<br><br>It is held in coordination with the <a href=\"https://2023.computational-humanities-research.org/\">CHR 2023 Conference</a> (Dec 6-8, 2023, EPITA, Paris).<br><br>Registration is <strong>mandatory</strong> at this link: <a href=\"https://framaforms.org/chr2023-workshop-ai-and-large-language-models-llms-for-the-analysis-of-large-literary-corpora\">Workshop Registration</a>.<br><br>The workshop will be on site. Remote attendance will be possible: a link will be sent the day before the workshop to participants who registered with the link above.</p></td><td></td></tr></tbody></table><h1>Situation</h1><p>The availability of large collections of literary texts (several thousands of novels for a given language for example, covering a significant part of the literature of the time) along with statistical models have profoundly changed our knowledge of literature. In parallel, the availability of efficient natural language processing (NLP) tools has made possible the structural analysis of these novels.</p><p>More recently, the advent of large language models and more specifically generative AI has again dramatically modified the analysis of literary texts, providing more robust and more versatile annotation tools. Zero-shot learning means that new categories and new tasks can be explored at a reduced cost, through prompting for example. But this is not without raising new questions. These techniques may be less robust (depending on the quality of the training set), harder to evaluate and harder to replicate (since models evolve very quickly; they depend on several parameters and do not always produce the same output).</p><p>The workshop will explore themes related to the annotation and analysis of large literary corpora. It will more specifically examine for what generic tasks we now have access to relatively robust and accurate tools. We will then investigate to what extent generative models can be exploited in this context, their benefits and their potential drawbacks. The implication on teaching may also be addressed, as well as the very quick obsolescence of current programs, given the pace of the evolution of the domain.</p><br><br><h1>Schedule</h1><ul><br><li><strong>9:45-10:00: Introduction.</strong></li><br><li><strong>10:00-10-45: The Promise and Peril of Large Language Models for Cultural Analytics</strong><br>David Bamman (Berkeley, USA).</li><br><li><strong>10:45-12:00: Analyzing Large French Literary Corpora with Fr-BookNLP</strong><br>Frédérique Mélanie, Jean Barré, Olga Seminck, Thierry Poibeau (CNRS &amp; ENS/PSL, France).</li><br><li><strong>Lunch.</strong></li><br><li><strong>1:30-2:15: Prediction and Surprise</strong><br>Ted Underwood (Illinois Urbana-Champaign, USA).</li><br><li><strong>2:15-3:00: Automatic Information Extraction from Literary Works for Audiobooks Generation</strong><br>Elena Epure (Deezer, France) &amp; Gaspard Michel (Deezer &amp; Loria, France).</li><br><li><strong>Break.</strong></li><br><li><strong>3:30-4:15: Computationally Modeling Collective Narratives</strong><br>Andrew Piper (McGill, Canada).</li><br><li><strong>4:15-5:15 Debate: LLMs, Generative Models and Literary Analysis: where are we going?</strong></li></ul><br><br><h2>Sponsors</h2><p>With the support of Lattice (<a href=\"https://lattice.cnrs.fr/\">https://lattice.cnrs.fr</a>), CNRS (IRN Cyclades) and Prairie (Paris Artificial Intelligence Research Institute, <a href=\"https://prairie-institute.fr/\">https://prairie-institute.fr</a>).</p><h2>Scientific committee</h2><ul><li>David Bamman (Berkeley, USA)</li><li>Evelyn Gius (Darmstadt, Germany)</li><li>Thierry Poibeau (CNRS, France)</li><li>Sara Tonelli (FKB, Italy)</li></ul><h2>Organization committee</h2><ul><li>Jean Barré (firstname [dot] lastname [at] ens.psl.eu)</li><li>Pedro Cabrera</li><li>Florian Cafiero</li><li>Fabien Garrido</li><li>Virginie Pauchont</li><li>Marie Puren</li><li>Thierry Poibeau (firstname [dot] lastname [at] ens.psl.eu)</li></ul></td></tr></tbody></table><table><tbody><tr><td><br><p>Big thanks to the <a href=\"https://github.com/jonbarron/jonbarron_website\"><strong>original template author</strong></a>.</p></td></tr></tbody></table>",
+                    "Localisation": "École Normale Supérieure, 45 Rue d'Ulm, 75005 Paris, France"
+                },
+                {
+                    "title": "[ECOLE THEMATIQUE BI-ANNUELLE] AXE 2 - GT4 : \"Le traitement automatique des textes : méthodes et concepts\"",
+                    "start": "00:00",
+                    "date": "08/11/2023",
+                    "description": "Pas de description disponible",
+                    "Localisation": "École Normale Supérieure de Lyon, site René Descartes, 15 parvis René Descartes, 69342 Lyon, France"
+                }
+            ]
+        },
+        "Autres GT": {
+            "2025": [
+                {
+                    "title": "[ECOLE THEMATIQUE BI-ANNUELLE] AXE 2 : \"Le traitement automatique des textes : méthodes et concepts\"",
+                    "start": "10:00",
+                    "date": "12/11/2025",
+                    "description": "<br><b>Deuxième édition de l'école thématique du Consortium-HN ARIANE</b><br><b>ENS Lyon, 12-14 novembre 2025</b><br><br>Programme : <br><br><b>Mercredi 12 novembre 2025 : ECOLE THEMATIQUE JOUR 1/2</b><br>10h00 - 10h30 : Accueil<br>10h30 - 11h00 : Maya LARBI (Université du Luxembourg), \"Introduction aux grands modèles de langues : Les LLMs pour les débutants\"<br>11h00-11h45 :  Nicolas GUTHERLE (Université Lyon 2), \"Pourquoi / comment utiliser les LLMs ?\"<br>14h00-14h45 : Ioana GALLERON (Sorbonne Nouvelle), \"Citer les usages de l'IA: enjeux\"<br>15h00-17h00 : Atelier 1/2 \"Utiliser des LLM avec une interface, comment bien <i>prompter</i>\"<br>17h00-17h30 : Discussion, installations logicielles en vue de l'atelier 2/2<br><br><b>Jeudi 13 novembre 2025 : ECOLE THEMATIQUE JOUR 2/2 </b><br>09h00 - 09h30 : Accueil<br>10h00 - 12h00 : Atelier 2/2 \"Utiliser des LLM sans interface, comment <i>fine tuner</i>\"<br>14h00-15h00 : Présentation du modèle ontologique “Corpus Author Ontology CRM (CAO_CRM)\" développé par le Consortium ARIANE<br>15h00-17h00 : Initiation à l'utilisation du modèle à l'aide d'OntoMatchGame\" (<a target=\"_blank\" href=\"https://ontomatchgame.huma-num.fr/\">https://ontomatchgame.huma-num.fr/</a>), Mélanie BOULAND (Consortium ARIANE)<br><br><br><b>Vendredi 14 novembre 2025 : Assemblée Générale du Consortium ARIANE</b><br>09h00 - 09h15 : Accueil<br>09h15 - 10h45 : Bilan annuel du Consortium et de ses groupes de travail<br>10h45 - 11h00 : Discussion<br>11h00 - 11h30 : Intervention du Conseil scientifique du Consortium<br>11h30 - 12h00 : Discussions, questions.     <br><br><br><br><blockquote>      <table><thead><tr><th>Salle </th><th>Nb. Pers.</th><th>Date début</th><th>Date fin</th></tr></thead><tbody><tr><td><br></td><td></td><td></td><td><br></td></tr><tr><td>D8 003 / D8 BUISSON / BUISSON</td><td>30</td><td>12/11/2025 08:30</td><td>12/11/2025 18:00</td></tr><tr><td>D8 003 / D8 BUISSON / BUISSON</td><td>30</td><td>13/11/2025 08:30</td><td>13/11/2025 17:45</td></tr></tbody></table></blockquote>",
+                    "Localisation": "École Normale Supérieure de Lyon, site René Descartes, 15 parvis René Descartes, 69342 Lyon, France"
+                }
+            ]
+        }
+    },
+    "AMIS": {
+        "Actualités AMIS": {
+            "2024": [
+                {
+                    "title": "AMIS. Working meeting for the European AMIS project",
+                    "start": "08:00",
+                    "date": "02/12/2024",
+                    "description": "Zoom",
+                    "Localisation": "Lieu non spécifié"
+                }
+            ],
+            "2025": [
+                {
+                    "title": "AMIS. Working meeting for the European AMIS project",
+                    "start": "08:30",
+                    "date": "11/12/2025",
+                    "description": "Zoom link : <a href=\"https://us02web.zoom.us/j/89027418890?pwd=NVhRM042YW1xVHpwMHNnZTNyZ1UwQT09\" target=\"_blank\">https://us02web.zoom.us/j/89027418890?pwd=NVhRM042YW1xVHpwMHNnZTNyZ1UwQT09</a><br><p><strong><br></strong></p><p><strong>Meeting Agenda</strong></p><ul><li><p>Presentation by Ameni GUIZANI and Ala Eddine LAOUIR on the tests performed on the 4 types of files</p></li><li><p>Extraction of metadata from the files, followed by searching other databases to complete the metadata</p></li><li><p>Testing with an interface </p></li><li><p>Possibility of a public workshop at the end of January</p></li></ul>",
+                    "Localisation": "zoom"
+                },
+                {
+                    "title": "AMIS. Suite - Working meeting for the European AMIS project",
+                    "start": "08:30",
+                    "date": "13/10/2025",
+                    "description": "Zoom link : <a href=\"https://us02web.zoom.us/j/89027418890?pwd=NVhRM042YW1xVHpwMHNnZTNyZ1UwQT09\" target=\"_blank\">https://us02web.zoom.us/j/89027418890?pwd=NVhRM042YW1xVHpwMHNnZTNyZ1UwQT09</a><br><br><ul><li>Bilan de la réunion de travail organisée dans le cadre d'AMIS</li><li>Lien avec les activités du consortium</li><li>Organisation de la suite des travaux</li></ul>",
+                    "Localisation": "zoom"
+                },
+                {
+                    "title": "AMIS. Working meeting for the European AMIS project",
+                    "start": "07:00",
+                    "date": "13/10/2025",
+                    "description": "Zoom link : <a href=\"https://us02web.zoom.us/j/89027418890?pwd=NVhRM042YW1xVHpwMHNnZTNyZ1UwQT09\" target=\"_blank\">https://us02web.zoom.us/j/89027418890?pwd=NVhRM042YW1xVHpwMHNnZTNyZ1UwQT09</a><br><p><strong><br></strong></p><p><strong>Meeting Agenda</strong></p><ul><li><p>Presentation by Ameni GUIZANI on the development of AMIS service and web client modules</p></li><li><p>Presentation of the 3 case situations identified so far</p></li><li><p>Presentation by Ala Eddine LAOUIR on:</p><ul><li><p>Tests performed on the 4 types of files</p></li><li><p>Extraction of metadata from the files, followed by searching other databases to complete the metadata</p></li></ul></li><li><p>Discussion of next steps in the timeline:</p><ul><li><p>Request for files in November</p></li><li><p>Organization of testing with the interface in December</p></li><li><p>Possibility of a public workshop at the end of January</p></li></ul></li></ul>",
+                    "Localisation": "zoom"
+                },
+                {
+                    "title": "AMIS. Working meeting for the European AMIS project",
+                    "start": "09:00",
+                    "date": "18/09/2025",
+                    "description": "Zoom link : https://us02web.zoom.us/j/89027418890?pwd=NVhRM042YW1xVHpwMHNnZTNyZ1UwQT09\n\nCC128, à Nation",
+                    "Localisation": "Lieu non spécifié"
+                },
+                {
+                    "title": "AMIS. Working meeting for the European AMIS project",
+                    "start": "10:00",
+                    "date": "01/07/2025",
+                    "description": "Zoom link : <a href=\"https://www.google.com/url?q=https://us02web.zoom.us/j/89027418890?pwd%3DNVhRM042YW1xVHpwMHNnZTNyZ1UwQT09&amp;sa=D&amp;source=calendar&amp;usd=2&amp;usg=AOvVaw2R27MCV38sByxx7y576xDi\" target=\"_blank\">https://us02web.zoom.us/j/89027418890?pwd=NVhRM042YW1xVHpwMHNnZTNyZ1UwQT09</a>",
+                    "Localisation": "Lieu non spécifié"
+                },
+                {
+                    "title": "AMIS. Working meeting for the European AMIS project",
+                    "start": "11:00",
+                    "date": "06/05/2025",
+                    "description": "Zoom link : <a href=\"https://www.google.com/url?q=https://us02web.zoom.us/j/89027418890?pwd%3DNVhRM042YW1xVHpwMHNnZTNyZ1UwQT09&amp;sa=D&amp;source=calendar&amp;usd=2&amp;usg=AOvVaw2R27MCV38sByxx7y576xDi\" target=\"_blank\">https://us02web.zoom.us/j/89027418890?pwd=NVhRM042YW1xVHpwMHNnZTNyZ1UwQT09</a>",
+                    "Localisation": "Lieu non spécifié"
+                },
+                {
+                    "title": "AMIS. Working meeting for the European AMIS project",
+                    "start": "11:00",
+                    "date": "08/04/2025",
+                    "description": "Zoom link : <a href=\"https://us02web.zoom.us/j/89027418890?pwd=NVhRM042YW1xVHpwMHNnZTNyZ1UwQT09\">https://us02web.zoom.us/j/89027418890?pwd=NVhRM042YW1xVHpwMHNnZTNyZ1UwQT09</a>",
+                    "Localisation": "Lieu non spécifié"
+                },
+                {
+                    "title": "AMIS. Working meeting for the European AMIS project",
+                    "start": "10:00",
+                    "date": "21/01/2025",
+                    "description": "Zoom\n\nParticiper via Google Meet : https://meet.google.com/uif-pwvb-gxv\n\nPour en savoir plus sur Meet : https://support.google.com/a/users/answer/9282720",
+                    "Localisation": "Lieu non spécifié"
+                }
+            ]
+        }
+    }
+}
