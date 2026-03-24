@@ -103,7 +103,7 @@ if response.status_code == 200:
     <base href=".">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" sizes="180x180" href="assets/img/logoAriane.jpg">
+    <link rel="icon" sizes="180x180" href="../assets/img/logoAriane.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/main.css">
@@ -140,11 +140,11 @@ if response.status_code == 200:
             <div class="header-logos d-flex align-items-center">
                 <!--Logo Ariane-->
                 <a href="https://cst-ariane.huma-num.fr/" class="me-2">
-                    <img src="assets/img/logoAriane.jpg" alt="CST-HN ARIANE logo">
+                    <img src="../assets/img/logoAriane.jpg" alt="CST-HN ARIANE logo">
                 </a>
                 <!--Logo Humanum-->
                 <a href="https://www.huma-num.fr/">
-                    <img src="assets/img/HN.png" alt="Huma-Num logo">
+                    <img src="../assets/img/HN.png" alt="Huma-Num logo">
                 </a>
             </div>
             <!--Menu-->
@@ -225,7 +225,10 @@ if response.status_code == 200:
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-gray-400 text-xl transition hover:text-gray-400/75" href="https://docs.google.com/forms/d/1nxWiaj88LY7R-poxxlTiUxdvyIH5hL5eBHFjgsfsKGg/viewform?edit_requested=true">Nous rejoindre</a>
+                        <a class="nav-link text-gray-400 text-xl transition hover:text-gray-400/75" href="https://forms.gle/Ar2WSduuLQrk3zxC8">Nous rejoindre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-xl transition" href="https://consortiumariane.gitpages.huma-num.fr/site_amis/index.html" style="color: rgb(143 0 6);">AMIS Project</a>
                     </li>
                 </ul>
             </nav>

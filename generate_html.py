@@ -122,10 +122,14 @@ HTML_TEMPLATE = """<!doctype html>
                             <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/calendrier_pages/Axe_1.html">Axe 1</a></li>
                             <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/calendrier_pages/Axe_2.html">Axe 2</a></li>
                             <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/calendrier_pages/Axe_3.html">Axe 3</a></li>
+                            <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/calendrier_pages/AMIS.html">AMIS</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-gray-400 text-xl transition hover:text-gray-400/75" href="https://docs.google.com/forms/d/1nxWiaj88LY7R-poxxlTiUxdvyIH5hL5eBHFjgsfsKGg/viewform?edit_requested=true">Nous rejoindre</a>
+                        <a class="nav-link text-gray-400 text-xl transition hover:text-gray-400/75" href="https://forms.gle/Ar2WSduuLQrk3zxC8">Nous rejoindre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-xl transition" href="https://consortiumariane.gitpages.huma-num.fr/site_amis/index.html" style="color: rgb(143 0 6);">AMIS Project</a>
                     </li>
                 </ul>
             </nav>
@@ -153,19 +157,22 @@ HTML_TEMPLATE = """<!doctype html>
     <!-- Footer -->
     <footer class="bg-light py-3">
         <div class="container d-flex justify-content-between align-items-center">
-            <div class="text-center flex-grow-1 me-5">
-                <p class="mb-0">&copy; 2024 Consortium HN Ariane. Tous droits réservés.</p>
-            </div>
-            <div class="ms-5">
-                <a href="https://consortiumariane.gitpages.huma-num.fr/axe1/credits.html" class="mx-2">Crédits</a>
-            </div>
-            <div class="ms-5">
-                <a href="https://hal.science/CONSORTIUM-HN-ARIANE" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/img/HAL_logotype-rvb_fond-clair_fr.png" class="img-fluid">
-                </a>
-            </div>
+          <div class="text-center flex-grow-1 me-5">
+            <p class="mb-0">&copy; 2024 Consortium HN Ariane. Tous droits réservés.</p>
+          </div>
+          <div class="ms-5">
+            <a href="https://consortiumariane.gitpages.huma-num.fr/axe1/credits.html" class="mx-2">Crédits</a>
+          </div>
+          <div class="ms-5">
+            <a href="https://consortiumariane.gitpages.huma-num.fr/axe1/mentions_legales.html" class="mx-2">Mentions légales</a>
+          </div>
+          <div class="ms-5">
+            <a href="https://hal.science/CONSORTIUM-HN-ARIANE" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/HAL_logotype-rvb_fond-clair_fr.png" class="img-fluid">
+            </a>
+          </div>
         </div>
-    </footer>
+      </footer>
 </body>
 </html>
 """

@@ -7,6 +7,15 @@ from collections import defaultdict
 with open("public/documents.json", "r", encoding="utf-8") as f:
     documents = json.load(f)
 
+# Nettoyer les titres : enlever les underscores après les deux premiers éléments
+for doc in documents:
+    name = doc.get("name")
+    if name:
+        parts = name.split("_")
+        if len(parts) >= 3:
+            clean_title = " ".join(parts[2:]).replace("_", " ")
+            doc["title"] = clean_title
+
 # Organiser les documents par GT puis par année
 gt_docs_by_year = defaultdict(lambda: defaultdict(list))
 all_gts = set()
@@ -138,17 +147,17 @@ html_output = f"""<!DOCTYPE html>
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item dropdown-toggle" href="https://consortiumariane.gitpages.huma-num.fr/axe1">Axe 1</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT1/GT1.html">GT1 - Labellisation</a></li>
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT2/GT2.html">GT2 - Acquisition de données et transcription par ordinateur</a></li>
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT3/GT3.html">GT3 - Outils et pratiques éditoriales</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT1/GT1.html">Labellisation</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT2/GT2.html">Acquisition de données et transcription par ordinateur</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT3/GT3.html">Outils et pratiques éditoriales</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item dropdown-toggle" href="https://consortiumariane.gitpages.huma-num.fr/axe2">Axe 2</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/GT4/GT4.html">GT4 - Analyse automatique de texte</a></li>
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/GT5/GT5.html">GT5 - Métadonnées et modélisation de données</a></li>
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/GT6/GT6.html">GT6 - Open French Corpus</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/GT4/GT4.html">Analyse automatique de texte</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/GT5/GT5.html">Métadonnées et modélisation de données</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/GT6/GT6.html">Open French Corpus</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
@@ -168,30 +177,27 @@ html_output = f"""<!DOCTYPE html>
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item dropdown-toggle">Axe 1</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_GT1.html">GT1 - Labellisation</a></li>
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_GT2.html">GT2 - Acquisition de données et transcription par ordinateur</a></li>
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_GT3.html">GT3 - Outils et pratiques éditoriales</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_GT1.html">GT1</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_GT2.html">GT2</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_GT3.html">GT3</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item dropdown-toggle">Axe 2</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_GT4.html">GT4 - Analyse automatique de texte</a></li>
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_GT5.html">GT5 - Métadonnées et modélisation de données</a></li>
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_GT6.html">GT6 - Open French Corpus</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/html_pages/travaux_GT4.html">GT4</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/html_pages/travaux_GT5.html">GT5</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/html_pages/travaux_GT6.html">GT6</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item dropdown-toggle">Axe 3</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_ethique.html">Enjeux éthiques</a></li>
-                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_juridique.html">Questions juridiques</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe3/html_pages/travaux_ethique.html">Enjeux éthiques</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe3/html_pages/travaux_juridique.html">Questions juridiques</a></li>
                                 </ul>
                             </li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-gray-400 text-xl transition hover:text-gray-400/75" href="https://consortiumariane.gitpages.huma-num.fr/outils/index.html">Outils</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link text-gray-400 text-xl transition hover:text-gray-400/75 dropdown-toggle" href="#" id="axesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -201,10 +207,14 @@ html_output = f"""<!DOCTYPE html>
                             <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/calendrier_pages/Axe_1.html">Axe 1</a></li>
                             <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/calendrier_pages/Axe_2.html">Axe 2</a></li>
                             <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/calendrier_pages/Axe_3.html">Axe 3</a></li>
+                            <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/calendrier_pages/AMIS.html">AMIS</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-gray-400 text-xl transition hover:text-gray-400/75" href="https://docs.google.com/forms/d/1nxWiaj88LY7R-poxxlTiUxdvyIH5hL5eBHFjgsfsKGg/viewform?edit_requested=true">Nous rejoindre</a>
+                        <a class="nav-link text-gray-400 text-xl transition hover:text-gray-400/75" href="https://forms.gle/Ar2WSduuLQrk3zxC8">Nous rejoindre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-xl transition" href="https://consortiumariane.gitpages.huma-num.fr/site_amis/index.html" style="color: rgb(143 0 6);">AMIS Project</a>
                     </li>
                 </ul>
             </nav>
@@ -216,7 +226,7 @@ html_output = f"""<!DOCTYPE html>
         {generate_filters_html(all_gts, all_years)}
         {generate_sections_html(gt_docs_by_year)}
     </main>
-    <!-- Footer -->
+
     <footer class="bg-light py-3">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="text-center flex-grow-1 me-5">
@@ -273,4 +283,4 @@ output_path = os.path.join(output_dir, "travaux_CS.html")
 with open(output_path, "w", encoding="utf-8") as f:
     f.write(html_output)
 
-print("✅ Fichier 'html_pages/travaux_CS.html' généré avec une présentation améliorée.")
+print("✅ Fichier 'html_pages/travaux_CS.html' généré avec les titres nettoyés.")
