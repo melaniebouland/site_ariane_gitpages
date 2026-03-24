@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="fr-fr">
+<head>
+    <base href=".">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" sizes="180x180" href="assets/img/AMISLogo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/main.css">
+    <title>AMIS</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .dropdown:hover>.dropdown-menu {
+            display: block;
+        }
+        .dropdown-submenu {
+            position: relative;
+        }
+        .dropdown-submenu:hover>.dropdown-menu {
+            display: block;
+        }
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+        }
+        .partners-container {
+            margin-top: 1rem;
+        }
+
+        .partners-logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            padding: 1.5rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .partner-item {
+            flex: 0 1 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .partner-logo {
+            max-height: 60px;
+            max-width: 120px;
+            object-fit: contain;
+            filter: grayscale(20%);
+            transition: all 0.3s ease;
+        }
+
+        .partner-logo:hover {
+            filter: grayscale(0%);
+            transform: scale(1.05);
+        }
+
+        .partners-text {
+            font-size: 0.9rem;
+            color: #6c757d;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .partners-logos {
+                gap: 1.5rem;
+            }
+            
+            .partner-logo {
+                max-height: 50px;
+                max-width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header AMIS -->
+    <header class="relative bg-white mb-2 w-100" style="box-shadow: 0 0 10px rgba(143, 0, 6, 0.1);">
+        <div class="border-top border-danger"></div>
+        <div class="header-content container">
+            <div class="header-logos d-flex align-items-center">
+                <!--Logo Ariane, à changer-->
+                <a href="https://oscars-project.eu/projects/amis-advanced-metadata-intelligent-system" class="me-2">
+                    <img src="assets/img/AMISLogo.svg" alt="AMIS logo">
+                </a>
+                <!--Logo Humanum, à changer-->
+                <a href="https://oscars-project.eu/"> 
+                    <img src="assets/img/OSCARS_logo.png" alt="Oscars logo">
+                </a>
+            </div>
+            <!--Menu-->
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-gray-400 text-xl transition hover:text-gray-400/75 dropdown-toggle" href="#" id="axesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Axes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="axesDropdown">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="https://consortiumariane.gitpages.huma-num.fr/axe1">Axe 1</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT1/GT1.html">GT1 - Labellisation</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT2/GT2.html">GT2 - Acquisition de données et transcription par ordinateur</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/GT3/GT3.html">GT3 - Outils et pratiques éditoriales</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="https://consortiumariane.gitpages.huma-num.fr/axe2">Axe 2</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/GT4/GT4.html">GT4 - Analyse automatique de textes</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/GT5/GT5.html">GT5 - Métadonnées et modélisation de données</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/GT6/GT6.html">GT6 - Open French Corpus</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="https://consortiumariane.gitpages.huma-num.fr/axe3">Axe 3</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe3/ethique/ethique.html">Enjeux éthiques</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe3/juridique/juridique.html">Questions juridiques</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-gray-400 text-xl transition hover:text-gray-400/75 dropdown-toggle" href="#" id="travauxDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Travaux
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="travauxDropdown">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Axe 1</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_GT1.html">GT1 - Labellisation</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_GT2.html">GT2 - Acquisition de données et transcription par ordinateur</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/html_pages/travaux_GT3.html">GT3 - Outils et pratiques éditoriales</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Axe 2</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/html_pages/travaux_GT4.html">GT4 - Analyse automatique de textes</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/html_pages/travaux_GT5.html">GT5 - Métadonnées et modélisation de données</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe2/html_pages/travaux_GT6.html">GT6 - Open French Corpus</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Axe 3</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe3/html_pages/travaux_ethique.html">Enjeux éthiques</a></li>
+                                    <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe3/html_pages/travaux_juridique.html">Questions juridiques</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-gray-400 text-xl transition hover:text-gray-400/75" href="https://consortiumariane.gitpages.huma-num.fr/outils/index.html">Outils</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-gray-400 text-xl transition hover:text-gray-400/75 dropdown-toggle" href="#" id="actualitesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Actualités
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="actualitesDropdown">
+                            <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/calendrier_pages/Axe_1.html">Axe 1</a></li>
+                            <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/calendrier_pages/Axe_2.html">Axe 2</a></li>
+                            <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/calendrier_pages/Axe_3.html">Axe 3</a></li>
+                            <li><a class="dropdown-item" href="https://consortiumariane.gitpages.huma-num.fr/axe1/calendrier_pages/AMIS.html">AMIS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-gray-400 text-xl transition hover:text-gray-400/75" href="https://forms.gle/Ar2WSduuLQrk3zxC8">Nous rejoindre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-xl transition" href="https://consortiumariane.gitpages.huma-num.fr/site_amis/index.html" style="color: rgb(143 0 6);">AMIS Project</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Contenu -->
+    <div class="container-fluid pt-4"></div>
+        <div class="row">
+            <!-- Contenu principal -->
+            <main class="col-md-9 content">
+                <!-- Bloc présentation AMIS -->
+                <div class="container-fluid full-width-container">
+                    <div class="container">
+                        <div class="title-container">
+                            <h1>Advanced Metadata Intelligent System</h1>
+                            <hr>
+                        </div>
+                        <div>
+                            <p class="card-text">The AMIS project aims to develop an innovative web application specifically designed for humanities researchers, focusing on text analysis for metadata enrichment. It is expected to be a user-friendly tool for assessing metadata quality, enriching it with additional information, and facilitating text analysis. The web application seeks to streamline metadata creation by providing design assistance, improving academic discoverability, and offering personalised recommendations for scholarly data. By leveraging machine learning, AMIS enables a contextualised approach to metadata enrichment, enhancing research processes, particularly for heritage texts in the Social Sciences and Humanities (SSH).</p>    
+                        </div> 
+                        <hr>                      
+                        <div>
+                            <h5 class="card-title">Challenge</h5>
+                            <p class="card-text">
+                               Metadata enrichment in digital humanities is often a manual, time-consuming task, with shared standards being defined but lacking open services that support the large-scale creation of quality metadata. As a result, due to differing interpretations of expectations, information extracted from the same field across a wide range of resources tends to display a high degree of inconsistency. The challenge, therefore, is to strike a balance between speed and precision while taking the researcher’s expertise into account.</p>
+                            <h5 class="card-title">Solution</h5>
+                            <p class="card-text">
+                                By developing a context-based web application, AMIS will provide an innovative environment for scholars to create and refine their own metadata in faster and more precise ways while also assisting them in identifying best practices and shared vocabularies for describing text content. The service uses machine learning techniques (text classification, named entity recognition - NER, named entity linking - NEL, sentiment analysis, topic modelling, text summarization, sequence labelling, and dependency parsing) to analyse the uploaded files, compare them with data from international repositories, and suggest enhancements in the form of metadata. The core module of AMIS will be trained on a wide variety of resources hosted in repositories such as Zenodo, Nakala, Rossio, Recolecta, Docta, and several others.</p>
+                            <h5 class="card-title">Scientific Impact</h5>
+                            <p class="card-text">
+                                By enhancing metadata quality and coherence, AMIS will contribute to the convergence of conceptual models in text description and analysis within cultural studies and other SSH disciplines. This will increase comparability among similar research conducted in different academic contexts and corpora. The project will also benefit researchers by improving their own metadata. Existing collections will be upgraded, while new digital corpora will be designed from the outset with enriched metadata perspectives. Heritage texts will not only be made available but will also be virtually linked through a multitude of information points to other existing resources, supporting further discoveries about the circulation of ideas and themes across cultural areas and over time. Finally, AMIS promotes better practices for metadata creation, improving the discoverability and reusability of scientific content.</p>
+                            <h5 class="card-title">Project team members</h5><!--Voir si besoin de lien vers les mails-->
+                            <p class="card-text">
+                                <a href="https://www.sorbonne-nouvelle.fr/mme-galleron-ioana-468922.kjsp">Prof. Ioana Galleron</a> (University of Sorbonne Nouvelle, France), <a href="https://fatihaidmhand.ovh/">Prof. Fatiha Idmhand</a> (University of Poitiers, France), <a href="https://eric.univ-lyon2.fr/sabine/">Prof. Sabine Loudcher</a> (University of Lyon 2, France), <a href="https://www.ucm.es/leethi/amelia-sanz-cabrerizo">Prof. Amelia Sanz</a> (University of Madrid Complutense, Spain), <a href="https://www.dlls.univr.it/?ent=persona&id=19903&lang=it">Prof. Simone Rebora</a> (University of Verona, Italy), <a href="https://ici.uaic.ro/en/dr-roxana-patras-senior-researcher-i/">Dr. Roxana Patras</a> (University AL. I. Cuza, Romania)
+                            </p>
+                            <h5 class="card-title">Partners</h5>
+                            <div class="partners-container">
+                                <div class="partners-logos">
+                                    <div class="partner-item">
+                                        <a href="https://www.huma-num.fr/" target="_blank" rel="noopener noreferrer">
+                                            <img src="assets/img/HN_LOGO_COULEUR-RVB.jpg" alt="Huma-Num" class="partner-logo">
+                                        </a>
+                                    </div>
+                                    <div class="partner-item">
+                                        <a href="https://www.cnrs.fr/" target="_blank" rel="noopener noreferrer">
+                                            <img src="assets/img/LOGO_CNRS_BLEU.png" alt="CNRS" class="partner-logo">
+                                        </a>
+                                    </div>
+                                    <div class="partner-item">
+                                        <a href="https://www.univ-poitiers.fr/" target="_blank" rel="noopener noreferrer">
+                                            <img src="assets/img/POITIERS-UNIVERSITE-CMJN-2014.png" alt="University of Poitiers" class="partner-logo">
+                                        </a>
+                                    </div>
+                                    <div class="partner-item">
+                                        <a href="https://www.sorbonne-nouvelle.fr/" target="_blank" rel="noopener noreferrer">
+                                            <img src="assets/img/sorbonne-nouvelle-devise-trapezes.jpg" alt="Sorbonne Nouvelle" class="partner-logo">
+                                        </a>
+                                    </div>
+                                    <div class="partner-item">
+                                        <a href="https://www.univ-lyon2.fr/" target="_blank" rel="noopener noreferrer">
+                                            <img src="assets/img/univlyon2_logo201806-N1.png" alt="University of Lyon 2" class="partner-logo">
+                                        </a>
+                                    </div>
+                                    <div class="partner-item">
+                                        <a href="https://www.univr.it/" target="_blank" rel="noopener noreferrer">
+                                            <img src="assets/img/logo-univr-colori-80.png" alt="University of Verona" class="partner-logo">
+                                        </a>
+                                    </div>
+                                    <div class="partner-item">
+                                        <a href="https://www.ucm.es/" target="_blank" rel="noopener noreferrer">
+                                            <img src="assets/img/3-2016-07-21-Marca UCM logo negro.png" alt="Universidad Complutense de Madrid" class="partner-logo">
+                                        </a>
+                                    </div>
+                                    <div class="partner-item">
+                                        <a href="https://www.uaic.ro/" target="_blank" rel="noopener noreferrer">
+                                            <img src="assets/img/UAIC_CoA.svg" alt="AL. I. Cuza University" class="partner-logo">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <aside class="col-md-3 sidebar">
+                <div class="container-fluid full-width-container" style="background-color:#19191726; padding: 20px;">
+                    <div class="container">
+                        <div class="d-flex align-items-center mb-3">
+                            <hr style="flex-grow: 1; border: 0; border-top: 2px solid #000;">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mb-4 d-flex">
+                                <div class="card w-100">
+                                    <a href="https://consortiumariane.gitpages.huma-num.fr/axe1/calendrier_pages/AMIS.html">
+                                        <img src="assets/img/calendrier-horloge.png" class="card-img img-fluid p-3" alt="calendrier AMIS">
+                                    </a>
+                                    <div class="card-body d-flex flex-column">
+                                        <p class="card-text">AMIS actualities</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mb-4 d-flex">
+                                <div class="card w-100">
+                                    <a href="https://www.youtube.com/watch?v=2uwtmSDQZf8">
+                                        <img src="assets/img/video-player.png" class="card-img img-fluid p-3" alt="Vidéo AMIS">
+                                    </a>
+                                    <div class="card-body d-flex flex-column">
+                                        <p class="card-text">AMIS video</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mb-4 d-flex">
+                                <div class="card w-100">
+                                    <a href="https://consortiumariane.gitpages.huma-num.fr/"><!--Changer lien-->
+                                        <img src="assets/img/coding.png" class="card-img img-fluid p-3" alt="Image code">
+                                    </a>
+                                    <div class="card-body d-flex flex-column">
+                                        <p class="card-text">Code and scripts</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mb-4 d-flex">
+                                <div class="card w-100">
+                                    <a href="https://consortiumariane.gitpages.huma-num.fr/"><!--Changer lien-->
+                                        <img src="assets/img/database.png" class="card-img img-fluid p-3" alt="Image BDD">
+                                    </a>
+                                    <div class="card-body d-flex flex-column">
+                                        <p class="card-text">Data and Database</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-light py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="text-center flex-grow-1 me-5">
+                <p class="mb-0">&copy; 2025 All rights reserved</p>
+            </div>
+            <div class="ms-5">
+                <a href="https://consortiumariane.gitpages.huma-num.fr/site_amis/credit_amis.html" class="mx-2">Credits</a>
+            </div>
+            <div class="ms-5">
+                <a href="https://hal.science/" target="_blank" rel="noopener noreferrer"><!--Changer lien-->
+                    <img src="assets/img/HAL_logotype-rvb_fond-clair_fr.png" class="img-fluid" alt="Logo HAL">
+                </a>
+            </div>
+        </div>
+    </footer>       
+</body>
+</html>
